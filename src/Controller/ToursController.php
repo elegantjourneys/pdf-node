@@ -1225,31 +1225,39 @@ public function savePdf(string $token = '')
 
     // Generate PDF using Browsershot
     // Using absolute paths for node and npm so WAMP doesn't fail
-    $browsershot = Browsershot::html($html);
+    try {
+        $browsershot = Browsershot::html($html);
 
-    if (PHP_OS_FAMILY === 'Windows') {
-        $browsershot->setNodeBinary('C:\Program Files\nodejs\node.exe')
-            ->setNpmBinary('C:\Program Files\nodejs\npm.cmd')
-            ->setChromePath('C:\Program Files\Google\Chrome\Application\chrome.exe');
-    } else {
-        $browsershot->noSandbox();
+        if (PHP_OS_FAMILY === 'Windows') {
+            $browsershot->setNodeBinary('C:\Program Files\nodejs\node.exe')
+                ->setNpmBinary('C:\Program Files\nodejs\npm.cmd')
+                ->setChromePath('C:\Program Files\Google\Chrome\Application\chrome.exe');
+        } else {
+            $browsershot->noSandbox();
+        }
+
+        $pdfOutput = $browsershot->format('A4')
+            ->showBackground()
+            ->margins(0, 0, 0, 0)
+            ->showBrowserHeaderAndFooter()
+            ->headerHtml($headerHtml)
+            ->footerHtml($footerHtml)
+            ->pdf();
+
+        return $this->response
+            ->withType('application/pdf')
+            ->withHeader(
+                'Content-Disposition',
+                'attachment; filename="tour-pdf.pdf"'
+            )
+            ->withStringBody($pdfOutput);
+
+    } catch (\Exception $e) {
+        // Return the actual error message so we can debug on production
+        return $this->response
+            ->withType('text/plain')
+            ->withStringBody("PDF Generation Failed:\n\n" . $e->getMessage());
     }
-
-    $pdfOutput = $browsershot->format('A4')
-        ->showBackground()
-        ->margins(0, 0, 0, 0)
-        ->showBrowserHeaderAndFooter()
-        ->headerHtml($headerHtml)
-        ->footerHtml($footerHtml)
-        ->pdf();
-
-    return $this->response
-        ->withType('application/pdf')
-        ->withHeader(
-            'Content-Disposition',
-            'attachment; filename="tour-pdf.pdf"'
-        )
-        ->withStringBody($pdfOutput);
 }
 
 
