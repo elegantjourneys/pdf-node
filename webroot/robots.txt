@@ -1,0 +1,13 @@
+User-agent: *
+Disallow: /theme
+Disallow: /files
+Disallow: /process
+Disallow: /tverify
+Disallow: /verify
+Disallow: /everify
+Disallow: /send-enquiry
+Disallow: /pay-now
+Disallow: /get-tour-price-by-currency
+
+
+Sitemap: https://www.elegantjourneys.com/sitemap.xml

@@ -1,0 +1,14 @@
+[11-Nov-2022 04:17:14 America/Chicago] PHP Fatal error:  Uncaught CKSource\CKFinder\Exception\FolderNotFoundException: Folder not found in /home2/jeelipn5/ht.home-tution.com/webroot/js/ckfinder/core/connector/php/vendor/cksource/ckfinder/src/CKSource/CKFinder/Filesystem/Folder/WorkingFolder.php:136
+Stack trace:
+#0 /home2/jeelipn5/ht.home-tution.com/webroot/js/ckfinder/core/connector/php/vendor/cksource/ckfinder/src/CKSource/CKFinder/CKFinder.php(138): CKSource\CKFinder\Filesystem\Folder\WorkingFolder->__construct(Object(CKSource\CKFinder\CKFinder))
+#1 /home2/jeelipn5/ht.home-tution.com/webroot/js/ckfinder/core/connector/php/vendor/pimple/pimple/src/Pimple/Container.php(122): CKSource\CKFinder\CKFinder->CKSource\CKFinder\{closure}(Object(CKSource\CKFinder\CKFinder))
+#2 /home2/jeelipn5/ht.home-tution.com/webroot/js/ckfinder/core/connector/php/vendor/cksource/ckfinder/src/CKSource/CKFinder/CKFinder.php(365): Pimple\Container->offsetGet('working_folder')
+#3 /home2/jeelipn5/ht.home-tution.com/webroot/js/ckfinder/core/connector/php/vendor/cksource/ckfinder/src/CKSource/CKFinder/Command/CommandAbstract.php(71): CKSource\CKFinder\CKFinder->getWorkingFolder()
+#4 /home2/jeelipn5/ht.home-tution.com/webroot/js/ckfinder/core/connector/php/vendor/cksource/ckfinder/src/CKSource/CKFinder/CommandResolver.php(156): CKSource\CKFinder\Command\CommandAbstract->checkPermissions()
+#5 /home2/jeelipn5/ht.home-tution.com/webroot/js/ckfinder/core/connector/php/vendor/symfony/http-kernel/HttpKernel.php(135): CKSource\CKFinder\CommandResolver->getController(Object(Symfony\Component\HttpFoundation\Request))
+#6 /home2/jeelipn5/ht.home-tution.com/webroot/js/ckfinder/core/connector/php/vendor/symfony/http-kernel/HttpKernel.php(74): Symfony\Component\HttpKernel\HttpKernel->handleRaw(Object(Symfony\Component\HttpFoundation\Request), 1)
+#7 /home2/jeelipn5/ht.home-tution.com/webroot/js/ckfinder/core/connector/php/vendor/cksource/ckfinder/src/CKSource/CKFinder/CKFinder.php(515): Symfony\Component\HttpKernel\HttpKernel->handle(Object(Symfony\Component\HttpFoundation\Request), 1, true)
+#8 /home2/jeelipn5/ht.home-tution.com/webroot/js/ckfinder/core/connector/php/vendor/cksource/ckfinder/src/CKSource/CKFinder/CKFinder.php(332): CKSource\CKFinder\CKFinder->handle(Object(Symfony\Component\HttpFoundation\Request))
+#9 /home2/jeelipn5/ht.home-tution.com/webroot/js/ckfinder/core/connector/php/connector.php(20): CKSource\CKFinder\CKFinder->run()
+#10 {main}
+  thrown in /home2/jeelipn5/ht.home-tution.com/webroot/js/ckfinder/core/connector/php/vendor/cksource/ckfinder/src/CKSource/CKFinder/Filesystem/Folder/WorkingFolder.php on line 136

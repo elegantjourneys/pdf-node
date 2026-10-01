@@ -1,0 +1,1 @@
+<?php echo $this->request->getData('html_content'); ?>

@@ -1,0 +1,1 @@
+<h1 ng-show="loading" class="text-center text-danger"><i class="fa fa-spinner fa-spin"></i> LOADING...</h1>

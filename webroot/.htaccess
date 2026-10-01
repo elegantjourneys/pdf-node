@@ -1,0 +1,9 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php [L]
+	
+	# Redirect any request containing ?eid=... to the same URL without eid
+	RewriteCond %{QUERY_STRING} (^|&)eid=[^&]+(&|$)
+	RewriteRule ^ %{REQUEST_URI}? [R=302,L]
+</IfModule>

@@ -1,0 +1,1 @@
+<?= $tourData['edited_html']; ?>

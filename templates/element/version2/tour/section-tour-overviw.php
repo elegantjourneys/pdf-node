@@ -1,0 +1,1 @@
+<div class="w-100 text-secondary lh-lg"><?=$data['content']['tour_overview']?></div>

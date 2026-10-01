@@ -1,0 +1,216 @@
+
+    *, *::before, *::after { box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0; padding: 0;
+      background: #eef0f4;
+    }
+
+    /* ── Sticky toolbar ── */
+    #copy-toolbar {
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      background: #003366;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 24px;
+      box-shadow: 0 2px 8px rgba(0,0,0,.35);
+    }
+    #copy-toolbar span { font-size: 14px; opacity: .85; }
+    #copy-toolbar .toolbar-actions { display: flex; gap: 10px; }
+    #copy-toolbar button {
+      padding: 8px 20px;
+      border: none;
+      border-radius: 4px;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: opacity .15s;
+    }
+    #copy-toolbar button:hover { opacity: .85; }
+    #btn-save-pdf { background: #b8860b; color: #fff; }
+    #btn-preview  { background: #fff;    color: #003366; }
+    #btn-reset    { background: transparent; color: #ffd; border: 1px solid #ffd; }
+
+    /*  Page wrapper ── */
+    #page-container {
+      max-width: 860px;
+      margin: 24px auto 40px;
+      background: #fff;
+      padding: 40px;
+      border-top: 6px solid #b8860b;
+      box-shadow: 0 4px 20px rgba(0,0,0,.1);
+    }
+
+    /* ── Editable fields ── */
+    .editable {
+      border: none;
+      background: transparent;
+      color: inherit;
+      font: inherit;
+      width: 100%;
+      padding: 2px 4px;
+      transition: background .2s;
+      border-radius: 2px;
+    }
+    .editable:focus {
+      outline: 2px dashed #b8860b;
+      background: #fffef0;
+    }
+    textarea.editable {
+      resize: vertical;
+      min-height: 60px;
+      line-height: 1.55;
+      display: block;
+    }
+
+    /* ── Section headers ── */
+    h2.section-head {
+      font-size: 20px;
+      color: #003366;
+      border-bottom: 2px solid #b8860b;
+      padding-bottom: 6px;
+      margin-top: 40px;
+    }
+
+    /* ─ Programme table ── */
+    .prog-table { width: 100%; border-collapse: collapse; font-size: 13px; margin-top: 12px; }
+    .prog-table th { border: 1px solid #ccc; padding: 10px; background: #003366; color: #fff; }
+    .prog-table td { border: 1px solid #ccc; padding: 8px; background: #fafafa; }
+
+    /* ── Day / City blocks ── */
+    .day-header {
+      font-size: 18px;
+      margin-top: 20px;
+      margin-bottom: 0;
+      color: #ffffff;
+      background: #003366;
+      padding: 6px 10px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .day-header input.editable {
+      font-size: 18px;
+      font-weight: 700;
+      color: #fff;
+      background: rgba(255,255,255,.12);
+      width: auto;
+      flex: 1;
+    }
+    .day-header input.editable:focus { outline: 2px dashed rgba(255,255,255,.6); background: rgba(255,255,255,.2); }
+
+    .city-subhead {
+      font-size: 15px;
+      margin-top: 14px;
+      color: #003366;
+      border-bottom: 2px solid #b8860b;
+      padding-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .city-subhead input.editable {
+      font-size: 15px;
+      font-weight: 600;
+      color: #003366;
+      background: transparent;
+      width: auto;
+      flex: 1;
+    }
+
+    .event-desc { font-size: 13px; line-height: 1.6; color: #333; margin: 6px 0; }
+    .event-desc textarea.editable { font-size: 13px; color: #333; }
+
+    /* ─ Hotels ── */
+    .hotels-section-head {
+      font-size: 15px;
+      margin-top: 20px;
+      color: #003366;
+      border-bottom: 2px solid #b8860b;
+      padding-bottom: 6px;
+    }
+    .hotel-table { width: 100%; border-collapse: collapse; font-size: 13px; margin-top: 12px; }
+    .hotel-table th { border: 1px solid #ccc; padding: 10px; color: #003366; }
+    .hotel-table td { border: 1px solid #ccc; padding: 8px; background: #fafafa; }
+
+    /* ── Inclusions / Exclusions ── */
+    .inc-exc-grid { display: flex; gap: 40px; margin-top: 15px; }
+    .inc-exc-grid > div { flex: 1; }
+    .inc-exc-grid h3 { font-size: 15px; color: #003366; margin-bottom: 10px; }
+    .inc-exc-grid ul { padding-left: 18px; font-size: 13px; line-height: 1.6; color: #333; margin: 0; }
+    .inc-exc-grid li { margin-bottom: 6px; }
+
+    /* ── Terms ── */
+    #custom-terms { width: 100%; min-height: 72px; font-size: 13px; line-height: 1.6; color: #333; }
+
+    /* ── Contact box ── */
+    .contact-box {
+      background: #fdf6e3;
+      padding: 18px;
+      margin-top: 25px;
+      font-size: 13px;
+      line-height: 1.6;
+      border-left: 5px solid #b8860b;
+    }
+
+    /* ─ Banner ── */
+    .banner-wrap { position: relative; margin-bottom: 40px; }
+    .banner-wrap img { width: 100%; max-height: 280px; object-fit: cover; border: 4px solid #003366; }
+    .banner-overlay { position: absolute; top: 60px; left: 0; right: 0; text-align: center; }
+    .banner-title-input {
+      font-size: 28px;
+      font-weight: 700;
+      color: #fff;
+      text-shadow: 2px 2px 8px rgba(0,0,0,.7);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      text-align: center;
+      background: transparent;
+      border: none;
+      width: 90%;
+      max-width: 600px;
+    }
+    .banner-title-input:focus { outline: 2px dashed rgba(255,255,255,.7); }
+
+    /* ── Footer ── */
+    .page-footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 12px;
+      color: #fff;
+      background: #003366;
+      padding: 14px;
+    }
+
+    /* ── Saving overlay ── */
+    #saving-overlay {
+      display: none;
+      position: fixed; inset: 0;
+      background: rgba(0,51,102,.75);
+      z-index: 9999;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 14px;
+      color: #fff;
+      font-size: 18px;
+    }
+    #saving-overlay.active { display: flex; }
+    .spinner {
+      width: 48px; height: 48px;
+      border: 5px solid rgba(255,255,255,.3);
+      border-top-color: #b8860b;
+      border-radius: 50%;
+      animation: spin .8s linear infinite;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    @media print {
+      #copy-toolbar, #saving-overlay { display: none !important; }
+      #page-container { box-shadow: none; margin: 0; }
+      .editable { background: transparent !important; outline: none !important; }
+    }
