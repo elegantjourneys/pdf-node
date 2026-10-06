@@ -1166,12 +1166,15 @@ public function savePdf(string $token = '')
         // Remove hardcoded page numbers from the HTML
         $html = preg_replace('/<div class="page-no">.*?<\/div>/s', '', $html);
         
+		// Remove empty paragraphs that only contain &nbsp; or whitespace
+        $html = preg_replace('/<p>(\s|&nbsp;|<br\s*\/?>)*<\/p>/i', '', $html);
+        
         // Inject a single fixed footer into the HTML that will repeat on every printed page
-        // Set bottom: 12mm to avoid overlapping with the native PDF page numbers at the very bottom
-        $fixedFooter = '<footer style="position: fixed; bottom: 12mm; left: 15mm; right: 15mm; z-index: 1000; background: white; border-top: 1px solid #b8860b; padding-top: 2mm; display: flex; align-items: center; justify-content: space-between;">' . $footerInner . '</footer>';
+        // Set bottom: 0 to reduce the huge bottom space
+        $fixedFooter = '<footer style="position: fixed; bottom: 0; padding-bottom: 5mm; left: 15mm; right: 15mm; z-index: 1000; background: white; border-top: 1px solid #b8860b; padding-top: 2mm; display: flex; align-items: center; justify-content: space-between;">' . $footerInner . '</footer>';
         
         // Add CSS to fix ugly page breaks and prevent blank pages from sheet margins
-        $pageBreakFixes = '<style>@media print { .sheet { margin: 0 !important; border: none !important; } h1, h2, h3, h4, h5, h6, .title, .sub-title, .day-title { page-break-after: avoid !important; } .day, p, tr, td, th, li { page-break-inside: avoid !important; } }</style>';
+        $pageBreakFixes = '<style>@media print { html, body { background: #ffffff !important; } .sheet { margin: 0 !important; border: none !important; } h1, h2, h3, h4, h5, h6, .title, .sub-title, .day-title { page-break-after: avoid !important; } .day, p, tr, td, th, li { page-break-inside: avoid !important; } }</style>';
         
         // Insert right after <body> tag
         $html = preg_replace('/<body.*?>/', '$0' . $fixedFooter . $pageBreakFixes, $html);
@@ -1179,7 +1182,7 @@ public function savePdf(string $token = '')
         // Inject JS to automatically scale down each sheet to perfectly fit exactly one A4 page
         $autoFitScript = "<script>
         window.addEventListener('load', function() {
-            var sheets = document.querySelectorAll('.sheet');
+            var sheets = document.querySelectorAll('.sheet:not(.multipage)');
             sheets.forEach(function(sheet) {
                 var a4Height = Math.floor(sheet.offsetWidth * (297 / 210)) - 1; 
                 
