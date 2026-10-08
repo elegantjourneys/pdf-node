@@ -1107,8 +1107,8 @@ public function savePdf(string $token = '')
 {
     $this->autoRender = false;
 
-    ini_set('display_errors', 1);
-    error_reporting(E_ALL);
+    ini_set('display_errors', 0);
+    error_reporting(E_ALL & ~E_DEPRECATED);
     ini_set('error_log', 'c:\wamp64\logs\pdf_debug.log');
 
     while (ob_get_level()) {
