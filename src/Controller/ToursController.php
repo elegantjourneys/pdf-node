@@ -47,7 +47,7 @@ class ToursController extends AppController
             'token'    => $token,
             'saveUrl'  => $this->request->getAttribute('webroot') . 'tours/save-pdf/' . $token,
         ]);
-        $this->render("pdf/pdf_version7_editable");
+        $this->render("pdf/pdf_version9_editable");
     }
 	 
 	 public function getTourData($data=array())
@@ -1096,7 +1096,7 @@ public function copyPage(string $token = ''): void
         'saveUrl'  => $this->request->getAttribute('webroot') . 'tours/save-pdf/' . $token,
     ]);
 
-    $this->render('pdf/pdf_version7_editable');
+    $this->render('pdf/pdf_version9_editable');
 }
 
 // ──────────────────────────────────────────
@@ -1152,7 +1152,8 @@ public function savePdf(string $token = '')
     $currentDate = strtoupper(date('d/M/Y'));
     
     // Configure header and footer for Browsershot
-    $headerHtml = '<div></div>';
+    $headerHtml = '
+    <div></div>';
     
     $partnerFooter = '';
     $parts = explode('<footer class="footer">', $html);
@@ -1221,9 +1222,13 @@ public function savePdf(string $token = '')
     }
 
     $footerHtml = '
-    <div style="font-size: 8px; width: 100%; font-family: Arial, sans-serif; display: flex; justify-content: space-between; padding: 0 15mm 10mm 15mm; color: #17345f;">
-        <div>Page <span class="pageNumber"></span> of <span class="totalPages"></span></div>
-        <div>' . $currentDate . '</div>
+    <div style="width: 100%; padding: 0 15mm;">
+        <div style="border-top: 1.5px solid #c99a32; padding-top: 5mm;">
+            <div style="font-size: 9px; font-family: Arial, sans-serif; display: flex; justify-content: space-between; color: #687386;">
+                <div style="letter-spacing: 1px;">Page <span class="pageNumber"></span> of <span class="totalPages"></span></div>
+                <div style="letter-spacing: 1px; text-transform: uppercase;">' . $currentDate . '</div>
+            </div>
+        </div>
     </div>';
 
     // Generate PDF using Browsershot
@@ -1232,8 +1237,11 @@ public function savePdf(string $token = '')
         $browsershot = Browsershot::html($html);
 
         if (PHP_OS_FAMILY === 'Windows') {
-            $browsershot->setNodeBinary('C:\Program Files\nodejs\node.exe')
-                ->setNpmBinary('C:\Program Files\nodejs\npm.cmd')
+            $nodeBinary = file_exists('C:\nvm4w\nodejs\node.exe') ? 'C:\nvm4w\nodejs\node.exe' : 'C:\Program Files\nodejs\node.exe';
+            $npmBinary = file_exists('C:\nvm4w\nodejs\npm.cmd') ? 'C:\nvm4w\nodejs\npm.cmd' : 'C:\Program Files\nodejs\npm.cmd';
+
+            $browsershot->setNodeBinary($nodeBinary)
+                ->setNpmBinary($npmBinary)
                 ->setChromePath('C:\Program Files\Google\Chrome\Application\chrome.exe');
         } else {
             $browsershot->noSandbox();
