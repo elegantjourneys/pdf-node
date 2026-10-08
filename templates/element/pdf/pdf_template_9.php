@@ -68,11 +68,11 @@ p{margin:0 0 10px}
 .meta strong{display:block;color:var(--navy);font-size:10.5pt;margin-top:2px}
 
 .price-wrap{margin-top:5mm;border-radius:4px;overflow:hidden;border:1px solid #e5d5ae}
-/* .price-title{background:var(--gold-soft);text-align:center;color:var(--navy); */
-.price-title{text-align:center;color:var(--navy);
+.price-title{background:var(--paper);text-align:center;color:var(--navy);
+/* .price-title{text-align:center;color:var(--navy); */
   font-family:Georgia,serif;font-weight:700;letter-spacing:1.8px;padding:3mm}
 table{width:100%;border-collapse:collapse}
-.price-table th,.hotel-table th{background:var(--paper);color:var(--navy);text-align:left;padding:3mm 4mm;
+.price-table th,.hotel-table th{background:var(--gold-soft);color:var(--navy);text-align:left;padding:3mm 4mm;
   font-size:8.5pt;letter-spacing:.3px}
 .price-table td{padding:3.2mm 4mm;border-bottom:1px solid #e3e3e3}
 .price-table tr:nth-child(even) td{background:#fbf8f0}

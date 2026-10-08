@@ -68304,3 +68304,2791 @@ Departure to your next destination, and En-route, visit the mysterious <strong>F
     [token] => cb9fb64cd40ac9d3
 )
 
+2026-10-08 08:05:14 error: Array
+(
+    [cities] => Array
+        (
+            [1] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => 262
+                            [order_sequence] => 1
+                            [day_count] => 1
+                            [tour_date] => 03-08-2026
+                            [start_day] => 1
+                            [end_day] => 2
+                            [block_id] => 939248
+                            [city_id] => 9
+                            [city_name] => Delhi
+                            [events] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [id] => 86
+                                            [name] => 2023 - DEL Arrival Airport Transfer w/ Vehicle cost
+                                            [city_id] => 9
+                                            [description] => <p>Welcome to Delhi Airport; our team will assist you upon arrival and transfer you to your pre-booked hotel. Please note the standard check-in time is 2 pm at the hotels.</p>
+<p><strong>Experiences/Services Included on this day:</strong></p>
+<ul>
+	<li>Private chauffeur-driven vehicle for seamless trav</li>
+</ul>
+<p>
+New Delhi is the capital of India, has been inhabited continuously since the 6th century BCE and has served as the capital of multiple kingdoms and empires throughout its history. In the 1920s, it was redesigned by Sir Edwin Lutyens and Sir Herbert Baker. Today, Delhi is a bustling metropolis that serves as a vibrant hub of international arts and culture and a thriving commercial centre.</p>
+
+                                        )
+
+                                )
+
+                        )
+
+                    [hotels] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [id] => 125
+                                    [hotel_type_name] => Superior Hotels
+                                    [hotel_type_id] => 4
+                                    [hotels] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [id] => 250
+                                                    [hotel_name] => The Park
+                                                    [room_name] => Luxury Room
+                                                )
+
+                                        )
+
+                                )
+
+                            [1] => Array
+                                (
+                                    [id] => 129
+                                    [hotel_type_name] => OBEROI LUXURY
+                                    [hotel_type_id] => 19
+                                    [hotels] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [id] => 255
+                                                    [hotel_name] => The Oberoi New Delhi
+                                                    [room_name] => Deluxe Room
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => 270
+                            [order_sequence] => 1
+                            [day_count] => 2
+                            [tour_date] => 04-08-2026
+                            [start_day] => 1
+                            [end_day] => 2
+                            [block_id] => 939248
+                            [city_id] => 9
+                            [city_name] => Delhi
+                            [events] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [id] => 87
+                                            [name] => CITY-ARRIVAL - AGRA
+                                            [city_id] => 9
+                                            [description] => <ul>
+	<li>Your chauffeur will drive you from Delhi to Agra in a private vehicle (Duration: 4 hrs)</li>
+</ul>
+                                        )
+
+                                )
+
+                        )
+
+                    [1] => Array
+                        (
+                            [id] => 271
+                            [order_sequence] => 2
+                            [day_count] => 2
+                            [tour_date] => 04-08-2026
+                            [start_day] => 1
+                            [end_day] => 3
+                            [block_id] => 57597
+                            [city_id] => 8
+                            [city_name] => Agra
+                            [events] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [id] => 88
+                                            [name] => 2023 - AGR Arrive by surface and check-in
+                                            [city_id] => 8
+                                            [description] => 
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [id] => 89
+                                            [name] => 2023 - AGRA Evening Kalakriti Mohabbat-the-Taj show
+                                            [city_id] => 8
+                                            [description] => <p><u>Timeless Love and Legacy: The Enchanting Tale of Mohabbat-the-Taj</u></p>
+<p>Experience the enchanting &#39;Mohabbat-the-Taj&#39; performance, which narrates the timeless love story of Shah Jahan and his beloved wife, Mumtaz Mahal. Immerse yourself in the opulence of the Mughal era and marvel at the tireless dedication of the artisans who spent 22 years crafting the magnificent Taj Mahal. Held at Kalakriti, &#39;Mohabbat-the-Taj&#39; is a captivating spectacle celebrating India&#39;s rich cultural and historical legacy. Take advantage of this opportunity to witness the vibrant heritage of India come to life at the live show.</p>
+
+                                        )
+
+                                )
+
+                        )
+
+                    [hotels] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [id] => 126
+                                    [hotel_type_name] => Superior Hotels
+                                    [hotel_type_id] => 4
+                                    [hotels] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [id] => 251
+                                                    [hotel_name] => Lemon Tree
+                                                    [room_name] => Superior Room
+                                                )
+
+                                        )
+
+                                )
+
+                            [1] => Array
+                                (
+                                    [id] => 130
+                                    [hotel_type_name] => OBEROI LUXURY
+                                    [hotel_type_id] => 19
+                                    [hotels] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [id] => 256
+                                                    [hotel_name] => Oberoi Amarvilas
+                                                    [room_name] => Premier Room Taj View
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [3] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => 272
+                            [order_sequence] => 1
+                            [day_count] => 3
+                            [tour_date] => 05-08-2026
+                            [start_day] => 1
+                            [end_day] => 3
+                            [block_id] => 57597
+                            [city_id] => 8
+                            [city_name] => Agra
+                            [events] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [id] => 90
+                                            [name] => 2023 - AGR - Mehtab, AGRA FORT, Sikri - Drive to onward destination
+                                            [city_id] => 8
+                                            [description] => <ul>
+	<li><u>Discovering Agra&#39;s Treasures: Mehtab Bagh, Agra Fort, and Fatehpur Sikri</u></li>
+</ul>
+<p>Begin your day at the enchanting <strong>Mehtab Bagh</strong>, a Mughal garden across the Taj Mahal, beyond the Yamuna River. Revel in a stroll while admiring the captivating view of the Taj Mahal from afar.
+<br />
+Explore the imposing <strong>Agra Fort</strong>, North India&#39;s premier red sandstone fortification, erected by Mughal Emperor Akbar in 1565. The fort&#39;s royal audience halls, expansive stone courtyards, elegant marble mosque, and private royal chambers provide a window into the Mughal Empire&#39;s brilliance in blending defensive architecture with aesthetic finesse.<br />
+<br />
+Departure to your next destination, and En-route, visit the mysterious <strong>Fatehpur Sikri</strong>, a deserted city that stands as one of the world&#39;s most impeccably preserved ghost cities. A testament to Emperor Akbar&#39;s visionary rule, this architectural marvel was constructed in 1571, harmoniously merging Persian court styles with prevailing Hindu-Islamic influences. The city&#39;s original red sandstone edifices remain as exquisite as when they were first sculpted. Among the numerous wonders is the Diwan I Khas&#39; Jewel House, a unique single-storey structure featuring four doorways and an intricately carved central pillar that supports a seat accessible via suspended walkways.</p>
+
+                                        )
+
+                                )
+
+                        )
+
+                    [1] => Array
+                        (
+                            [id] => 273
+                            [order_sequence] => 2
+                            [day_count] => 3
+                            [tour_date] => 05-08-2026
+                            [start_day] => 3
+                            [end_day] => 3
+                            [block_id] => 193721
+                            [city_id] => 26
+                            [city_name] => Jaipur
+                            [events] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [id] => 91
+                                            [name] => 2023 - JAI Arrive by surface in Jaipur. Check-in at the hotel.
+                                            [city_id] => 26
+                                            [description] => 
+                                        )
+
+                                )
+
+                        )
+
+                    [hotels] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [id] => 127
+                                    [hotel_type_name] => Superior Hotels
+                                    [hotel_type_id] => 4
+                                    [hotels] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [id] => 252
+                                                    [hotel_name] => Ramada
+                                                    [room_name] => Deluxe Room
+                                                )
+
+                                            [1] => Array
+                                                (
+                                                    [id] => 253
+                                                    [hotel_name] => Four Points Sheraton
+                                                    [room_name] => Deluxe Room
+                                                )
+
+                                        )
+
+                                )
+
+                            [1] => Array
+                                (
+                                    [id] => 131
+                                    [hotel_type_name] => OBEROI LUXURY
+                                    [hotel_type_id] => 19
+                                    [hotels] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [id] => 257
+                                                    [hotel_name] => Oberoi Rajvilas
+                                                    [room_name] => Premier Room
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [4] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => 268
+                            [order_sequence] => 1
+                            [day_count] => 4
+                            [tour_date] => 06-08-2026
+                            [start_day] => 2
+                            [end_day] => 4
+                            [block_id] => 497368
+                            [city_id] => 26
+                            [city_name] => Jaipur
+                            [events] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [id] => 92
+                                            [name] => 2023 - JAI Full day Amber and City tour
+                                            [city_id] => 26
+                                            [description] => 
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [id] => 93
+                                            [name] => 2023 - JAI Airport Departure
+                                            [city_id] => 26
+                                            [description] => <p>Check out from the hotel and transfer to the airport to board your flight.</p>
+                                        )
+
+                                )
+
+                        )
+
+                    [1] => Array
+                        (
+                            [id] => 269
+                            [order_sequence] => 2
+                            [day_count] => 4
+                            [tour_date] => 06-08-2026
+                            [start_day] => 4
+                            [end_day] => 4
+                            [block_id] => 811
+                            [city_id] => 9
+                            [city_name] => Delhi
+                            [events] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [id] => 94
+                                            [name] => 2023 - DEL Airport Departure transfer
+                                            [city_id] => 9
+                                            [description] => <p>Departure transfer to the airport to board your flight.</p>
+                                        )
+
+                                )
+
+                        )
+
+                    [hotels] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [id] => 128
+                                    [hotel_type_name] => Superior Hotels
+                                    [hotel_type_id] => 4
+                                    [hotels] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [id] => 254
+                                                    [hotel_name] => The Park
+                                                    [room_name] => Luxury Room
+                                                )
+
+                                        )
+
+                                )
+
+                            [1] => Array
+                                (
+                                    [id] => 132
+                                    [hotel_type_name] => OBEROI LUXURY
+                                    [hotel_type_id] => 19
+                                    [hotels] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [id] => 258
+                                                    [hotel_name] => The Oberoi New Delhi
+                                                    [room_name] => Deluxe Room
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [inclusion] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 30
+                    [description] => Accommodation in mentioned hotels on double/twin sharing basis.
+                )
+
+            [1] => Array
+                (
+                    [id] => 31
+                    [description] => Monuments entry fees, including Still camera charges (non-professional)
+                )
+
+        )
+
+    [exclusion] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 32
+                    [description] => GST at 5% or as applicable will be charged extra as per Government of India.
+                )
+
+            [1] => Array
+                (
+                    [id] => 33
+                    [description] => Domestic airfare (Estimate US$ 100 each flight)
+                )
+
+            [2] => Array
+                (
+                    [id] => 34
+                    [description] => Video Camera charges
+                )
+
+        )
+
+    [event_inclusion] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 196
+                    [description] => Mohabbat-the-Taj live show in Agra
+                )
+
+            [1] => Array
+                (
+                    [id] => 226
+                    [description] => Exclusive Experience: Elephant or jeep ride at Amber Fort in Jaipur
+                )
+
+        )
+
+    [city_day_list] => Array
+        (
+            [0] => Array
+                (
+                    [city_name] => Delhi
+                    [block_id] => 939248
+                    [start_day] => 1
+                    [end_day] => 2
+                )
+
+            [1] => Array
+                (
+                    [city_name] => Agra
+                    [block_id] => 57597
+                    [start_day] => 2
+                    [end_day] => 3
+                )
+
+            [2] => Array
+                (
+                    [city_name] => Jaipur
+                    [block_id] => 193721
+                    [start_day] => 3
+                    [end_day] => 3
+                )
+
+            [3] => Array
+                (
+                    [city_name] => Jaipur
+                    [block_id] => 497368
+                    [start_day] => 4
+                    [end_day] => 4
+                )
+
+            [4] => Array
+                (
+                    [city_name] => Delhi
+                    [block_id] => 811
+                    [start_day] => 4
+                    [end_day] => 4
+                )
+
+        )
+
+    [hotel_group_list] => Array
+        (
+            [0] => Array
+                (
+                    [hotel_type_id] => 4
+                    [hotel_type_name] => Superior Hotels
+                    [hotel_city_list] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [city_id] => 9
+                                    [city_name] => Delhi
+                                    [day_count] => 1
+                                    [start_day] => 1
+                                    [end_day] => 1
+                                    [hotel_list] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [hotel_name] => The Park
+                                                    [room_name] => Luxury Room
+                                                    [room_code] => luxuryroom
+                                                )
+
+                                        )
+
+                                )
+
+                            [1] => Array
+                                (
+                                    [city_id] => 8
+                                    [city_name] => Agra
+                                    [day_count] => 2
+                                    [start_day] => 2
+                                    [end_day] => 2
+                                    [hotel_list] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [hotel_name] => Lemon Tree
+                                                    [room_name] => Superior Room
+                                                    [room_code] => superiorroom
+                                                )
+
+                                        )
+
+                                )
+
+                            [2] => Array
+                                (
+                                    [city_id] => 26
+                                    [city_name] => Jaipur
+                                    [day_count] => 3
+                                    [start_day] => 3
+                                    [end_day] => 3
+                                    [hotel_list] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [hotel_name] => Ramada
+                                                    [room_name] => Deluxe Room
+                                                    [room_code] => deluxeroom
+                                                )
+
+                                            [1] => Array
+                                                (
+                                                    [hotel_name] => Four Points Sheraton
+                                                    [room_name] => Deluxe Room
+                                                    [room_code] => deluxeroom
+                                                )
+
+                                        )
+
+                                )
+
+                            [3] => Array
+                                (
+                                    [city_id] => 9
+                                    [city_name] => Delhi
+                                    [day_count] => 4
+                                    [start_day] => 4
+                                    [end_day] => 4
+                                    [hotel_list] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [hotel_name] => The Park
+                                                    [room_name] => Luxury Room
+                                                    [room_code] => luxuryroom
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [hotel_type_id] => 19
+                    [hotel_type_name] => OBEROI LUXURY
+                    [hotel_city_list] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [city_id] => 9
+                                    [city_name] => Delhi
+                                    [day_count] => 1
+                                    [start_day] => 1
+                                    [end_day] => 1
+                                    [hotel_list] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [hotel_name] => The Oberoi New Delhi
+                                                    [room_name] => Deluxe Room
+                                                    [room_code] => contract-deluxeroom
+                                                )
+
+                                        )
+
+                                )
+
+                            [1] => Array
+                                (
+                                    [city_id] => 8
+                                    [city_name] => Agra
+                                    [day_count] => 2
+                                    [start_day] => 2
+                                    [end_day] => 2
+                                    [hotel_list] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [hotel_name] => Oberoi Amarvilas
+                                                    [room_name] => Premier Room Taj View
+                                                    [room_code] => ob2-premierroom-cp
+                                                )
+
+                                        )
+
+                                )
+
+                            [2] => Array
+                                (
+                                    [city_id] => 26
+                                    [city_name] => Jaipur
+                                    [day_count] => 3
+                                    [start_day] => 3
+                                    [end_day] => 3
+                                    [hotel_list] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [hotel_name] => Oberoi Rajvilas
+                                                    [room_name] => Premier Room
+                                                    [room_code] => ob2-premierroom-cp
+                                                )
+
+                                        )
+
+                                )
+
+                            [3] => Array
+                                (
+                                    [city_id] => 9
+                                    [city_name] => Delhi
+                                    [day_count] => 4
+                                    [start_day] => 4
+                                    [end_day] => 4
+                                    [hotel_list] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [hotel_name] => The Oberoi New Delhi
+                                                    [room_name] => Deluxe Room
+                                                    [room_code] => contract-deluxeroom
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [id] => 22
+    [name] => test rakesh 1001
+    [duration] => 4
+    [price] => 0
+    [no_of_person] => 2
+    [view_type] => day_view
+    [token] => cb9fb64cd40ac9d3
+)
+
+2026-10-08 08:05:14 error: Array
+(
+    [cities] => Array
+        (
+            [1] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => 262
+                            [order_sequence] => 1
+                            [day_count] => 1
+                            [tour_date] => 03-08-2026
+                            [start_day] => 1
+                            [end_day] => 2
+                            [block_id] => 939248
+                            [city_id] => 9
+                            [city_name] => Delhi
+                            [events] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [id] => 86
+                                            [name] => 2023 - DEL Arrival Airport Transfer w/ Vehicle cost
+                                            [city_id] => 9
+                                            [description] => <p>Welcome to Delhi Airport; our team will assist you upon arrival and transfer you to your pre-booked hotel. Please note the standard check-in time is 2 pm at the hotels.</p>
+<p><strong>Experiences/Services Included on this day:</strong></p>
+<ul>
+	<li>Private chauffeur-driven vehicle for seamless trav</li>
+</ul>
+<p>
+New Delhi is the capital of India, has been inhabited continuously since the 6th century BCE and has served as the capital of multiple kingdoms and empires throughout its history. In the 1920s, it was redesigned by Sir Edwin Lutyens and Sir Herbert Baker. Today, Delhi is a bustling metropolis that serves as a vibrant hub of international arts and culture and a thriving commercial centre.</p>
+
+                                        )
+
+                                )
+
+                        )
+
+                    [hotels] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [id] => 125
+                                    [hotel_type_name] => Superior Hotels
+                                    [hotel_type_id] => 4
+                                    [hotels] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [id] => 250
+                                                    [hotel_name] => The Park
+                                                    [room_name] => Luxury Room
+                                                )
+
+                                        )
+
+                                )
+
+                            [1] => Array
+                                (
+                                    [id] => 129
+                                    [hotel_type_name] => OBEROI LUXURY
+                                    [hotel_type_id] => 19
+                                    [hotels] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [id] => 255
+                                                    [hotel_name] => The Oberoi New Delhi
+                                                    [room_name] => Deluxe Room
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => 270
+                            [order_sequence] => 1
+                            [day_count] => 2
+                            [tour_date] => 04-08-2026
+                            [start_day] => 1
+                            [end_day] => 2
+                            [block_id] => 939248
+                            [city_id] => 9
+                            [city_name] => Delhi
+                            [events] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [id] => 87
+                                            [name] => CITY-ARRIVAL - AGRA
+                                            [city_id] => 9
+                                            [description] => <ul>
+	<li>Your chauffeur will drive you from Delhi to Agra in a private vehicle (Duration: 4 hrs)</li>
+</ul>
+                                        )
+
+                                )
+
+                        )
+
+                    [1] => Array
+                        (
+                            [id] => 271
+                            [order_sequence] => 2
+                            [day_count] => 2
+                            [tour_date] => 04-08-2026
+                            [start_day] => 1
+                            [end_day] => 3
+                            [block_id] => 57597
+                            [city_id] => 8
+                            [city_name] => Agra
+                            [events] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [id] => 88
+                                            [name] => 2023 - AGR Arrive by surface and check-in
+                                            [city_id] => 8
+                                            [description] => 
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [id] => 89
+                                            [name] => 2023 - AGRA Evening Kalakriti Mohabbat-the-Taj show
+                                            [city_id] => 8
+                                            [description] => <p><u>Timeless Love and Legacy: The Enchanting Tale of Mohabbat-the-Taj</u></p>
+<p>Experience the enchanting &#39;Mohabbat-the-Taj&#39; performance, which narrates the timeless love story of Shah Jahan and his beloved wife, Mumtaz Mahal. Immerse yourself in the opulence of the Mughal era and marvel at the tireless dedication of the artisans who spent 22 years crafting the magnificent Taj Mahal. Held at Kalakriti, &#39;Mohabbat-the-Taj&#39; is a captivating spectacle celebrating India&#39;s rich cultural and historical legacy. Take advantage of this opportunity to witness the vibrant heritage of India come to life at the live show.</p>
+
+                                        )
+
+                                )
+
+                        )
+
+                    [hotels] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [id] => 126
+                                    [hotel_type_name] => Superior Hotels
+                                    [hotel_type_id] => 4
+                                    [hotels] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [id] => 251
+                                                    [hotel_name] => Lemon Tree
+                                                    [room_name] => Superior Room
+                                                )
+
+                                        )
+
+                                )
+
+                            [1] => Array
+                                (
+                                    [id] => 130
+                                    [hotel_type_name] => OBEROI LUXURY
+                                    [hotel_type_id] => 19
+                                    [hotels] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [id] => 256
+                                                    [hotel_name] => Oberoi Amarvilas
+                                                    [room_name] => Premier Room Taj View
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [3] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => 272
+                            [order_sequence] => 1
+                            [day_count] => 3
+                            [tour_date] => 05-08-2026
+                            [start_day] => 1
+                            [end_day] => 3
+                            [block_id] => 57597
+                            [city_id] => 8
+                            [city_name] => Agra
+                            [events] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [id] => 90
+                                            [name] => 2023 - AGR - Mehtab, AGRA FORT, Sikri - Drive to onward destination
+                                            [city_id] => 8
+                                            [description] => <ul>
+	<li><u>Discovering Agra&#39;s Treasures: Mehtab Bagh, Agra Fort, and Fatehpur Sikri</u></li>
+</ul>
+<p>Begin your day at the enchanting <strong>Mehtab Bagh</strong>, a Mughal garden across the Taj Mahal, beyond the Yamuna River. Revel in a stroll while admiring the captivating view of the Taj Mahal from afar.
+<br />
+Explore the imposing <strong>Agra Fort</strong>, North India&#39;s premier red sandstone fortification, erected by Mughal Emperor Akbar in 1565. The fort&#39;s royal audience halls, expansive stone courtyards, elegant marble mosque, and private royal chambers provide a window into the Mughal Empire&#39;s brilliance in blending defensive architecture with aesthetic finesse.<br />
+<br />
+Departure to your next destination, and En-route, visit the mysterious <strong>Fatehpur Sikri</strong>, a deserted city that stands as one of the world&#39;s most impeccably preserved ghost cities. A testament to Emperor Akbar&#39;s visionary rule, this architectural marvel was constructed in 1571, harmoniously merging Persian court styles with prevailing Hindu-Islamic influences. The city&#39;s original red sandstone edifices remain as exquisite as when they were first sculpted. Among the numerous wonders is the Diwan I Khas&#39; Jewel House, a unique single-storey structure featuring four doorways and an intricately carved central pillar that supports a seat accessible via suspended walkways.</p>
+
+                                        )
+
+                                )
+
+                        )
+
+                    [1] => Array
+                        (
+                            [id] => 273
+                            [order_sequence] => 2
+                            [day_count] => 3
+                            [tour_date] => 05-08-2026
+                            [start_day] => 3
+                            [end_day] => 3
+                            [block_id] => 193721
+                            [city_id] => 26
+                            [city_name] => Jaipur
+                            [events] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [id] => 91
+                                            [name] => 2023 - JAI Arrive by surface in Jaipur. Check-in at the hotel.
+                                            [city_id] => 26
+                                            [description] => 
+                                        )
+
+                                )
+
+                        )
+
+                    [hotels] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [id] => 127
+                                    [hotel_type_name] => Superior Hotels
+                                    [hotel_type_id] => 4
+                                    [hotels] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [id] => 252
+                                                    [hotel_name] => Ramada
+                                                    [room_name] => Deluxe Room
+                                                )
+
+                                            [1] => Array
+                                                (
+                                                    [id] => 253
+                                                    [hotel_name] => Four Points Sheraton
+                                                    [room_name] => Deluxe Room
+                                                )
+
+                                        )
+
+                                )
+
+                            [1] => Array
+                                (
+                                    [id] => 131
+                                    [hotel_type_name] => OBEROI LUXURY
+                                    [hotel_type_id] => 19
+                                    [hotels] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [id] => 257
+                                                    [hotel_name] => Oberoi Rajvilas
+                                                    [room_name] => Premier Room
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [4] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => 268
+                            [order_sequence] => 1
+                            [day_count] => 4
+                            [tour_date] => 06-08-2026
+                            [start_day] => 2
+                            [end_day] => 4
+                            [block_id] => 497368
+                            [city_id] => 26
+                            [city_name] => Jaipur
+                            [events] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [id] => 92
+                                            [name] => 2023 - JAI Full day Amber and City tour
+                                            [city_id] => 26
+                                            [description] => 
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [id] => 93
+                                            [name] => 2023 - JAI Airport Departure
+                                            [city_id] => 26
+                                            [description] => <p>Check out from the hotel and transfer to the airport to board your flight.</p>
+                                        )
+
+                                )
+
+                        )
+
+                    [1] => Array
+                        (
+                            [id] => 269
+                            [order_sequence] => 2
+                            [day_count] => 4
+                            [tour_date] => 06-08-2026
+                            [start_day] => 4
+                            [end_day] => 4
+                            [block_id] => 811
+                            [city_id] => 9
+                            [city_name] => Delhi
+                            [events] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [id] => 94
+                                            [name] => 2023 - DEL Airport Departure transfer
+                                            [city_id] => 9
+                                            [description] => <p>Departure transfer to the airport to board your flight.</p>
+                                        )
+
+                                )
+
+                        )
+
+                    [hotels] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [id] => 128
+                                    [hotel_type_name] => Superior Hotels
+                                    [hotel_type_id] => 4
+                                    [hotels] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [id] => 254
+                                                    [hotel_name] => The Park
+                                                    [room_name] => Luxury Room
+                                                )
+
+                                        )
+
+                                )
+
+                            [1] => Array
+                                (
+                                    [id] => 132
+                                    [hotel_type_name] => OBEROI LUXURY
+                                    [hotel_type_id] => 19
+                                    [hotels] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [id] => 258
+                                                    [hotel_name] => The Oberoi New Delhi
+                                                    [room_name] => Deluxe Room
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [inclusion] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 30
+                    [description] => Accommodation in mentioned hotels on double/twin sharing basis.
+                )
+
+            [1] => Array
+                (
+                    [id] => 31
+                    [description] => Monuments entry fees, including Still camera charges (non-professional)
+                )
+
+        )
+
+    [exclusion] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 32
+                    [description] => GST at 5% or as applicable will be charged extra as per Government of India.
+                )
+
+            [1] => Array
+                (
+                    [id] => 33
+                    [description] => Domestic airfare (Estimate US$ 100 each flight)
+                )
+
+            [2] => Array
+                (
+                    [id] => 34
+                    [description] => Video Camera charges
+                )
+
+        )
+
+    [event_inclusion] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 196
+                    [description] => Mohabbat-the-Taj live show in Agra
+                )
+
+            [1] => Array
+                (
+                    [id] => 226
+                    [description] => Exclusive Experience: Elephant or jeep ride at Amber Fort in Jaipur
+                )
+
+        )
+
+    [city_day_list] => Array
+        (
+            [0] => Array
+                (
+                    [city_name] => Delhi
+                    [block_id] => 939248
+                    [start_day] => 1
+                    [end_day] => 2
+                )
+
+            [1] => Array
+                (
+                    [city_name] => Agra
+                    [block_id] => 57597
+                    [start_day] => 2
+                    [end_day] => 3
+                )
+
+            [2] => Array
+                (
+                    [city_name] => Jaipur
+                    [block_id] => 193721
+                    [start_day] => 3
+                    [end_day] => 3
+                )
+
+            [3] => Array
+                (
+                    [city_name] => Jaipur
+                    [block_id] => 497368
+                    [start_day] => 4
+                    [end_day] => 4
+                )
+
+            [4] => Array
+                (
+                    [city_name] => Delhi
+                    [block_id] => 811
+                    [start_day] => 4
+                    [end_day] => 4
+                )
+
+        )
+
+    [hotel_group_list] => Array
+        (
+            [0] => Array
+                (
+                    [hotel_type_id] => 4
+                    [hotel_type_name] => Superior Hotels
+                    [hotel_city_list] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [city_id] => 9
+                                    [city_name] => Delhi
+                                    [day_count] => 1
+                                    [start_day] => 1
+                                    [end_day] => 1
+                                    [hotel_list] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [hotel_name] => The Park
+                                                    [room_name] => Luxury Room
+                                                    [room_code] => luxuryroom
+                                                )
+
+                                        )
+
+                                )
+
+                            [1] => Array
+                                (
+                                    [city_id] => 8
+                                    [city_name] => Agra
+                                    [day_count] => 2
+                                    [start_day] => 2
+                                    [end_day] => 2
+                                    [hotel_list] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [hotel_name] => Lemon Tree
+                                                    [room_name] => Superior Room
+                                                    [room_code] => superiorroom
+                                                )
+
+                                        )
+
+                                )
+
+                            [2] => Array
+                                (
+                                    [city_id] => 26
+                                    [city_name] => Jaipur
+                                    [day_count] => 3
+                                    [start_day] => 3
+                                    [end_day] => 3
+                                    [hotel_list] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [hotel_name] => Ramada
+                                                    [room_name] => Deluxe Room
+                                                    [room_code] => deluxeroom
+                                                )
+
+                                            [1] => Array
+                                                (
+                                                    [hotel_name] => Four Points Sheraton
+                                                    [room_name] => Deluxe Room
+                                                    [room_code] => deluxeroom
+                                                )
+
+                                        )
+
+                                )
+
+                            [3] => Array
+                                (
+                                    [city_id] => 9
+                                    [city_name] => Delhi
+                                    [day_count] => 4
+                                    [start_day] => 4
+                                    [end_day] => 4
+                                    [hotel_list] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [hotel_name] => The Park
+                                                    [room_name] => Luxury Room
+                                                    [room_code] => luxuryroom
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [hotel_type_id] => 19
+                    [hotel_type_name] => OBEROI LUXURY
+                    [hotel_city_list] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [city_id] => 9
+                                    [city_name] => Delhi
+                                    [day_count] => 1
+                                    [start_day] => 1
+                                    [end_day] => 1
+                                    [hotel_list] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [hotel_name] => The Oberoi New Delhi
+                                                    [room_name] => Deluxe Room
+                                                    [room_code] => contract-deluxeroom
+                                                )
+
+                                        )
+
+                                )
+
+                            [1] => Array
+                                (
+                                    [city_id] => 8
+                                    [city_name] => Agra
+                                    [day_count] => 2
+                                    [start_day] => 2
+                                    [end_day] => 2
+                                    [hotel_list] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [hotel_name] => Oberoi Amarvilas
+                                                    [room_name] => Premier Room Taj View
+                                                    [room_code] => ob2-premierroom-cp
+                                                )
+
+                                        )
+
+                                )
+
+                            [2] => Array
+                                (
+                                    [city_id] => 26
+                                    [city_name] => Jaipur
+                                    [day_count] => 3
+                                    [start_day] => 3
+                                    [end_day] => 3
+                                    [hotel_list] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [hotel_name] => Oberoi Rajvilas
+                                                    [room_name] => Premier Room
+                                                    [room_code] => ob2-premierroom-cp
+                                                )
+
+                                        )
+
+                                )
+
+                            [3] => Array
+                                (
+                                    [city_id] => 9
+                                    [city_name] => Delhi
+                                    [day_count] => 4
+                                    [start_day] => 4
+                                    [end_day] => 4
+                                    [hotel_list] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [hotel_name] => The Oberoi New Delhi
+                                                    [room_name] => Deluxe Room
+                                                    [room_code] => contract-deluxeroom
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [id] => 22
+    [name] => test rakesh 1001
+    [duration] => 4
+    [price] => 0
+    [no_of_person] => 2
+    [view_type] => day_view
+    [token] => cb9fb64cd40ac9d3
+)
+
+2026-10-08 08:59:48 error: Array
+(
+    [cities] => Array
+        (
+            [1] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => 262
+                            [order_sequence] => 1
+                            [day_count] => 1
+                            [tour_date] => 03-08-2026
+                            [start_day] => 1
+                            [end_day] => 2
+                            [block_id] => 939248
+                            [city_id] => 9
+                            [city_name] => Delhi
+                            [events] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [id] => 86
+                                            [name] => 2023 - DEL Arrival Airport Transfer w/ Vehicle cost
+                                            [city_id] => 9
+                                            [description] => <p>Welcome to Delhi Airport; our team will assist you upon arrival and transfer you to your pre-booked hotel. Please note the standard check-in time is 2 pm at the hotels.</p>
+<p><strong>Experiences/Services Included on this day:</strong></p>
+<ul>
+	<li>Private chauffeur-driven vehicle for seamless trav</li>
+</ul>
+<p>
+New Delhi is the capital of India, has been inhabited continuously since the 6th century BCE and has served as the capital of multiple kingdoms and empires throughout its history. In the 1920s, it was redesigned by Sir Edwin Lutyens and Sir Herbert Baker. Today, Delhi is a bustling metropolis that serves as a vibrant hub of international arts and culture and a thriving commercial centre.</p>
+
+                                        )
+
+                                )
+
+                        )
+
+                    [hotels] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [id] => 125
+                                    [hotel_type_name] => Superior Hotels
+                                    [hotel_type_id] => 4
+                                    [hotels] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [id] => 250
+                                                    [hotel_name] => The Park
+                                                    [room_name] => Luxury Room
+                                                )
+
+                                        )
+
+                                )
+
+                            [1] => Array
+                                (
+                                    [id] => 129
+                                    [hotel_type_name] => OBEROI LUXURY
+                                    [hotel_type_id] => 19
+                                    [hotels] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [id] => 255
+                                                    [hotel_name] => The Oberoi New Delhi
+                                                    [room_name] => Deluxe Room
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => 270
+                            [order_sequence] => 1
+                            [day_count] => 2
+                            [tour_date] => 04-08-2026
+                            [start_day] => 1
+                            [end_day] => 2
+                            [block_id] => 939248
+                            [city_id] => 9
+                            [city_name] => Delhi
+                            [events] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [id] => 87
+                                            [name] => CITY-ARRIVAL - AGRA
+                                            [city_id] => 9
+                                            [description] => <ul>
+	<li>Your chauffeur will drive you from Delhi to Agra in a private vehicle (Duration: 4 hrs)</li>
+</ul>
+                                        )
+
+                                )
+
+                        )
+
+                    [1] => Array
+                        (
+                            [id] => 271
+                            [order_sequence] => 2
+                            [day_count] => 2
+                            [tour_date] => 04-08-2026
+                            [start_day] => 1
+                            [end_day] => 3
+                            [block_id] => 57597
+                            [city_id] => 8
+                            [city_name] => Agra
+                            [events] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [id] => 88
+                                            [name] => 2023 - AGR Arrive by surface and check-in
+                                            [city_id] => 8
+                                            [description] => 
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [id] => 89
+                                            [name] => 2023 - AGRA Evening Kalakriti Mohabbat-the-Taj show
+                                            [city_id] => 8
+                                            [description] => <p><u>Timeless Love and Legacy: The Enchanting Tale of Mohabbat-the-Taj</u></p>
+<p>Experience the enchanting &#39;Mohabbat-the-Taj&#39; performance, which narrates the timeless love story of Shah Jahan and his beloved wife, Mumtaz Mahal. Immerse yourself in the opulence of the Mughal era and marvel at the tireless dedication of the artisans who spent 22 years crafting the magnificent Taj Mahal. Held at Kalakriti, &#39;Mohabbat-the-Taj&#39; is a captivating spectacle celebrating India&#39;s rich cultural and historical legacy. Take advantage of this opportunity to witness the vibrant heritage of India come to life at the live show.</p>
+
+                                        )
+
+                                )
+
+                        )
+
+                    [hotels] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [id] => 126
+                                    [hotel_type_name] => Superior Hotels
+                                    [hotel_type_id] => 4
+                                    [hotels] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [id] => 251
+                                                    [hotel_name] => Lemon Tree
+                                                    [room_name] => Superior Room
+                                                )
+
+                                        )
+
+                                )
+
+                            [1] => Array
+                                (
+                                    [id] => 130
+                                    [hotel_type_name] => OBEROI LUXURY
+                                    [hotel_type_id] => 19
+                                    [hotels] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [id] => 256
+                                                    [hotel_name] => Oberoi Amarvilas
+                                                    [room_name] => Premier Room Taj View
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [3] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => 272
+                            [order_sequence] => 1
+                            [day_count] => 3
+                            [tour_date] => 05-08-2026
+                            [start_day] => 1
+                            [end_day] => 3
+                            [block_id] => 57597
+                            [city_id] => 8
+                            [city_name] => Agra
+                            [events] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [id] => 90
+                                            [name] => 2023 - AGR - Mehtab, AGRA FORT, Sikri - Drive to onward destination
+                                            [city_id] => 8
+                                            [description] => <ul>
+	<li><u>Discovering Agra&#39;s Treasures: Mehtab Bagh, Agra Fort, and Fatehpur Sikri</u></li>
+</ul>
+<p>Begin your day at the enchanting <strong>Mehtab Bagh</strong>, a Mughal garden across the Taj Mahal, beyond the Yamuna River. Revel in a stroll while admiring the captivating view of the Taj Mahal from afar.
+<br />
+Explore the imposing <strong>Agra Fort</strong>, North India&#39;s premier red sandstone fortification, erected by Mughal Emperor Akbar in 1565. The fort&#39;s royal audience halls, expansive stone courtyards, elegant marble mosque, and private royal chambers provide a window into the Mughal Empire&#39;s brilliance in blending defensive architecture with aesthetic finesse.<br />
+<br />
+Departure to your next destination, and En-route, visit the mysterious <strong>Fatehpur Sikri</strong>, a deserted city that stands as one of the world&#39;s most impeccably preserved ghost cities. A testament to Emperor Akbar&#39;s visionary rule, this architectural marvel was constructed in 1571, harmoniously merging Persian court styles with prevailing Hindu-Islamic influences. The city&#39;s original red sandstone edifices remain as exquisite as when they were first sculpted. Among the numerous wonders is the Diwan I Khas&#39; Jewel House, a unique single-storey structure featuring four doorways and an intricately carved central pillar that supports a seat accessible via suspended walkways.</p>
+
+                                        )
+
+                                )
+
+                        )
+
+                    [1] => Array
+                        (
+                            [id] => 273
+                            [order_sequence] => 2
+                            [day_count] => 3
+                            [tour_date] => 05-08-2026
+                            [start_day] => 3
+                            [end_day] => 3
+                            [block_id] => 193721
+                            [city_id] => 26
+                            [city_name] => Jaipur
+                            [events] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [id] => 91
+                                            [name] => 2023 - JAI Arrive by surface in Jaipur. Check-in at the hotel.
+                                            [city_id] => 26
+                                            [description] => 
+                                        )
+
+                                )
+
+                        )
+
+                    [hotels] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [id] => 127
+                                    [hotel_type_name] => Superior Hotels
+                                    [hotel_type_id] => 4
+                                    [hotels] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [id] => 252
+                                                    [hotel_name] => Ramada
+                                                    [room_name] => Deluxe Room
+                                                )
+
+                                            [1] => Array
+                                                (
+                                                    [id] => 253
+                                                    [hotel_name] => Four Points Sheraton
+                                                    [room_name] => Deluxe Room
+                                                )
+
+                                        )
+
+                                )
+
+                            [1] => Array
+                                (
+                                    [id] => 131
+                                    [hotel_type_name] => OBEROI LUXURY
+                                    [hotel_type_id] => 19
+                                    [hotels] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [id] => 257
+                                                    [hotel_name] => Oberoi Rajvilas
+                                                    [room_name] => Premier Room
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [4] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => 268
+                            [order_sequence] => 1
+                            [day_count] => 4
+                            [tour_date] => 06-08-2026
+                            [start_day] => 2
+                            [end_day] => 4
+                            [block_id] => 497368
+                            [city_id] => 26
+                            [city_name] => Jaipur
+                            [events] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [id] => 92
+                                            [name] => 2023 - JAI Full day Amber and City tour
+                                            [city_id] => 26
+                                            [description] => 
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [id] => 93
+                                            [name] => 2023 - JAI Airport Departure
+                                            [city_id] => 26
+                                            [description] => <p>Check out from the hotel and transfer to the airport to board your flight.</p>
+                                        )
+
+                                )
+
+                        )
+
+                    [1] => Array
+                        (
+                            [id] => 269
+                            [order_sequence] => 2
+                            [day_count] => 4
+                            [tour_date] => 06-08-2026
+                            [start_day] => 4
+                            [end_day] => 4
+                            [block_id] => 811
+                            [city_id] => 9
+                            [city_name] => Delhi
+                            [events] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [id] => 94
+                                            [name] => 2023 - DEL Airport Departure transfer
+                                            [city_id] => 9
+                                            [description] => <p>Departure transfer to the airport to board your flight.</p>
+                                        )
+
+                                )
+
+                        )
+
+                    [hotels] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [id] => 128
+                                    [hotel_type_name] => Superior Hotels
+                                    [hotel_type_id] => 4
+                                    [hotels] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [id] => 254
+                                                    [hotel_name] => The Park
+                                                    [room_name] => Luxury Room
+                                                )
+
+                                        )
+
+                                )
+
+                            [1] => Array
+                                (
+                                    [id] => 132
+                                    [hotel_type_name] => OBEROI LUXURY
+                                    [hotel_type_id] => 19
+                                    [hotels] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [id] => 258
+                                                    [hotel_name] => The Oberoi New Delhi
+                                                    [room_name] => Deluxe Room
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [inclusion] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 30
+                    [description] => Accommodation in mentioned hotels on double/twin sharing basis.
+                )
+
+            [1] => Array
+                (
+                    [id] => 31
+                    [description] => Monuments entry fees, including Still camera charges (non-professional)
+                )
+
+        )
+
+    [exclusion] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 32
+                    [description] => GST at 5% or as applicable will be charged extra as per Government of India.
+                )
+
+            [1] => Array
+                (
+                    [id] => 33
+                    [description] => Domestic airfare (Estimate US$ 100 each flight)
+                )
+
+            [2] => Array
+                (
+                    [id] => 34
+                    [description] => Video Camera charges
+                )
+
+        )
+
+    [event_inclusion] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 196
+                    [description] => Mohabbat-the-Taj live show in Agra
+                )
+
+            [1] => Array
+                (
+                    [id] => 226
+                    [description] => Exclusive Experience: Elephant or jeep ride at Amber Fort in Jaipur
+                )
+
+        )
+
+    [city_day_list] => Array
+        (
+            [0] => Array
+                (
+                    [city_name] => Delhi
+                    [block_id] => 939248
+                    [start_day] => 1
+                    [end_day] => 2
+                )
+
+            [1] => Array
+                (
+                    [city_name] => Agra
+                    [block_id] => 57597
+                    [start_day] => 2
+                    [end_day] => 3
+                )
+
+            [2] => Array
+                (
+                    [city_name] => Jaipur
+                    [block_id] => 193721
+                    [start_day] => 3
+                    [end_day] => 3
+                )
+
+            [3] => Array
+                (
+                    [city_name] => Jaipur
+                    [block_id] => 497368
+                    [start_day] => 4
+                    [end_day] => 4
+                )
+
+            [4] => Array
+                (
+                    [city_name] => Delhi
+                    [block_id] => 811
+                    [start_day] => 4
+                    [end_day] => 4
+                )
+
+        )
+
+    [hotel_group_list] => Array
+        (
+            [0] => Array
+                (
+                    [hotel_type_id] => 4
+                    [hotel_type_name] => Superior Hotels
+                    [hotel_city_list] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [city_id] => 9
+                                    [city_name] => Delhi
+                                    [day_count] => 1
+                                    [start_day] => 1
+                                    [end_day] => 1
+                                    [hotel_list] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [hotel_name] => The Park
+                                                    [room_name] => Luxury Room
+                                                    [room_code] => luxuryroom
+                                                )
+
+                                        )
+
+                                )
+
+                            [1] => Array
+                                (
+                                    [city_id] => 8
+                                    [city_name] => Agra
+                                    [day_count] => 2
+                                    [start_day] => 2
+                                    [end_day] => 2
+                                    [hotel_list] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [hotel_name] => Lemon Tree
+                                                    [room_name] => Superior Room
+                                                    [room_code] => superiorroom
+                                                )
+
+                                        )
+
+                                )
+
+                            [2] => Array
+                                (
+                                    [city_id] => 26
+                                    [city_name] => Jaipur
+                                    [day_count] => 3
+                                    [start_day] => 3
+                                    [end_day] => 3
+                                    [hotel_list] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [hotel_name] => Ramada
+                                                    [room_name] => Deluxe Room
+                                                    [room_code] => deluxeroom
+                                                )
+
+                                            [1] => Array
+                                                (
+                                                    [hotel_name] => Four Points Sheraton
+                                                    [room_name] => Deluxe Room
+                                                    [room_code] => deluxeroom
+                                                )
+
+                                        )
+
+                                )
+
+                            [3] => Array
+                                (
+                                    [city_id] => 9
+                                    [city_name] => Delhi
+                                    [day_count] => 4
+                                    [start_day] => 4
+                                    [end_day] => 4
+                                    [hotel_list] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [hotel_name] => The Park
+                                                    [room_name] => Luxury Room
+                                                    [room_code] => luxuryroom
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [hotel_type_id] => 19
+                    [hotel_type_name] => OBEROI LUXURY
+                    [hotel_city_list] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [city_id] => 9
+                                    [city_name] => Delhi
+                                    [day_count] => 1
+                                    [start_day] => 1
+                                    [end_day] => 1
+                                    [hotel_list] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [hotel_name] => The Oberoi New Delhi
+                                                    [room_name] => Deluxe Room
+                                                    [room_code] => contract-deluxeroom
+                                                )
+
+                                        )
+
+                                )
+
+                            [1] => Array
+                                (
+                                    [city_id] => 8
+                                    [city_name] => Agra
+                                    [day_count] => 2
+                                    [start_day] => 2
+                                    [end_day] => 2
+                                    [hotel_list] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [hotel_name] => Oberoi Amarvilas
+                                                    [room_name] => Premier Room Taj View
+                                                    [room_code] => ob2-premierroom-cp
+                                                )
+
+                                        )
+
+                                )
+
+                            [2] => Array
+                                (
+                                    [city_id] => 26
+                                    [city_name] => Jaipur
+                                    [day_count] => 3
+                                    [start_day] => 3
+                                    [end_day] => 3
+                                    [hotel_list] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [hotel_name] => Oberoi Rajvilas
+                                                    [room_name] => Premier Room
+                                                    [room_code] => ob2-premierroom-cp
+                                                )
+
+                                        )
+
+                                )
+
+                            [3] => Array
+                                (
+                                    [city_id] => 9
+                                    [city_name] => Delhi
+                                    [day_count] => 4
+                                    [start_day] => 4
+                                    [end_day] => 4
+                                    [hotel_list] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [hotel_name] => The Oberoi New Delhi
+                                                    [room_name] => Deluxe Room
+                                                    [room_code] => contract-deluxeroom
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [id] => 22
+    [name] => test rakesh 1001
+    [duration] => 4
+    [price] => 0
+    [no_of_person] => 2
+    [view_type] => day_view
+    [token] => cb9fb64cd40ac9d3
+)
+
+2026-10-08 08:59:48 error: Array
+(
+    [cities] => Array
+        (
+            [1] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => 262
+                            [order_sequence] => 1
+                            [day_count] => 1
+                            [tour_date] => 03-08-2026
+                            [start_day] => 1
+                            [end_day] => 2
+                            [block_id] => 939248
+                            [city_id] => 9
+                            [city_name] => Delhi
+                            [events] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [id] => 86
+                                            [name] => 2023 - DEL Arrival Airport Transfer w/ Vehicle cost
+                                            [city_id] => 9
+                                            [description] => <p>Welcome to Delhi Airport; our team will assist you upon arrival and transfer you to your pre-booked hotel. Please note the standard check-in time is 2 pm at the hotels.</p>
+<p><strong>Experiences/Services Included on this day:</strong></p>
+<ul>
+	<li>Private chauffeur-driven vehicle for seamless trav</li>
+</ul>
+<p>
+New Delhi is the capital of India, has been inhabited continuously since the 6th century BCE and has served as the capital of multiple kingdoms and empires throughout its history. In the 1920s, it was redesigned by Sir Edwin Lutyens and Sir Herbert Baker. Today, Delhi is a bustling metropolis that serves as a vibrant hub of international arts and culture and a thriving commercial centre.</p>
+
+                                        )
+
+                                )
+
+                        )
+
+                    [hotels] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [id] => 125
+                                    [hotel_type_name] => Superior Hotels
+                                    [hotel_type_id] => 4
+                                    [hotels] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [id] => 250
+                                                    [hotel_name] => The Park
+                                                    [room_name] => Luxury Room
+                                                )
+
+                                        )
+
+                                )
+
+                            [1] => Array
+                                (
+                                    [id] => 129
+                                    [hotel_type_name] => OBEROI LUXURY
+                                    [hotel_type_id] => 19
+                                    [hotels] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [id] => 255
+                                                    [hotel_name] => The Oberoi New Delhi
+                                                    [room_name] => Deluxe Room
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => 270
+                            [order_sequence] => 1
+                            [day_count] => 2
+                            [tour_date] => 04-08-2026
+                            [start_day] => 1
+                            [end_day] => 2
+                            [block_id] => 939248
+                            [city_id] => 9
+                            [city_name] => Delhi
+                            [events] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [id] => 87
+                                            [name] => CITY-ARRIVAL - AGRA
+                                            [city_id] => 9
+                                            [description] => <ul>
+	<li>Your chauffeur will drive you from Delhi to Agra in a private vehicle (Duration: 4 hrs)</li>
+</ul>
+                                        )
+
+                                )
+
+                        )
+
+                    [1] => Array
+                        (
+                            [id] => 271
+                            [order_sequence] => 2
+                            [day_count] => 2
+                            [tour_date] => 04-08-2026
+                            [start_day] => 1
+                            [end_day] => 3
+                            [block_id] => 57597
+                            [city_id] => 8
+                            [city_name] => Agra
+                            [events] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [id] => 88
+                                            [name] => 2023 - AGR Arrive by surface and check-in
+                                            [city_id] => 8
+                                            [description] => 
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [id] => 89
+                                            [name] => 2023 - AGRA Evening Kalakriti Mohabbat-the-Taj show
+                                            [city_id] => 8
+                                            [description] => <p><u>Timeless Love and Legacy: The Enchanting Tale of Mohabbat-the-Taj</u></p>
+<p>Experience the enchanting &#39;Mohabbat-the-Taj&#39; performance, which narrates the timeless love story of Shah Jahan and his beloved wife, Mumtaz Mahal. Immerse yourself in the opulence of the Mughal era and marvel at the tireless dedication of the artisans who spent 22 years crafting the magnificent Taj Mahal. Held at Kalakriti, &#39;Mohabbat-the-Taj&#39; is a captivating spectacle celebrating India&#39;s rich cultural and historical legacy. Take advantage of this opportunity to witness the vibrant heritage of India come to life at the live show.</p>
+
+                                        )
+
+                                )
+
+                        )
+
+                    [hotels] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [id] => 126
+                                    [hotel_type_name] => Superior Hotels
+                                    [hotel_type_id] => 4
+                                    [hotels] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [id] => 251
+                                                    [hotel_name] => Lemon Tree
+                                                    [room_name] => Superior Room
+                                                )
+
+                                        )
+
+                                )
+
+                            [1] => Array
+                                (
+                                    [id] => 130
+                                    [hotel_type_name] => OBEROI LUXURY
+                                    [hotel_type_id] => 19
+                                    [hotels] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [id] => 256
+                                                    [hotel_name] => Oberoi Amarvilas
+                                                    [room_name] => Premier Room Taj View
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [3] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => 272
+                            [order_sequence] => 1
+                            [day_count] => 3
+                            [tour_date] => 05-08-2026
+                            [start_day] => 1
+                            [end_day] => 3
+                            [block_id] => 57597
+                            [city_id] => 8
+                            [city_name] => Agra
+                            [events] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [id] => 90
+                                            [name] => 2023 - AGR - Mehtab, AGRA FORT, Sikri - Drive to onward destination
+                                            [city_id] => 8
+                                            [description] => <ul>
+	<li><u>Discovering Agra&#39;s Treasures: Mehtab Bagh, Agra Fort, and Fatehpur Sikri</u></li>
+</ul>
+<p>Begin your day at the enchanting <strong>Mehtab Bagh</strong>, a Mughal garden across the Taj Mahal, beyond the Yamuna River. Revel in a stroll while admiring the captivating view of the Taj Mahal from afar.
+<br />
+Explore the imposing <strong>Agra Fort</strong>, North India&#39;s premier red sandstone fortification, erected by Mughal Emperor Akbar in 1565. The fort&#39;s royal audience halls, expansive stone courtyards, elegant marble mosque, and private royal chambers provide a window into the Mughal Empire&#39;s brilliance in blending defensive architecture with aesthetic finesse.<br />
+<br />
+Departure to your next destination, and En-route, visit the mysterious <strong>Fatehpur Sikri</strong>, a deserted city that stands as one of the world&#39;s most impeccably preserved ghost cities. A testament to Emperor Akbar&#39;s visionary rule, this architectural marvel was constructed in 1571, harmoniously merging Persian court styles with prevailing Hindu-Islamic influences. The city&#39;s original red sandstone edifices remain as exquisite as when they were first sculpted. Among the numerous wonders is the Diwan I Khas&#39; Jewel House, a unique single-storey structure featuring four doorways and an intricately carved central pillar that supports a seat accessible via suspended walkways.</p>
+
+                                        )
+
+                                )
+
+                        )
+
+                    [1] => Array
+                        (
+                            [id] => 273
+                            [order_sequence] => 2
+                            [day_count] => 3
+                            [tour_date] => 05-08-2026
+                            [start_day] => 3
+                            [end_day] => 3
+                            [block_id] => 193721
+                            [city_id] => 26
+                            [city_name] => Jaipur
+                            [events] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [id] => 91
+                                            [name] => 2023 - JAI Arrive by surface in Jaipur. Check-in at the hotel.
+                                            [city_id] => 26
+                                            [description] => 
+                                        )
+
+                                )
+
+                        )
+
+                    [hotels] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [id] => 127
+                                    [hotel_type_name] => Superior Hotels
+                                    [hotel_type_id] => 4
+                                    [hotels] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [id] => 252
+                                                    [hotel_name] => Ramada
+                                                    [room_name] => Deluxe Room
+                                                )
+
+                                            [1] => Array
+                                                (
+                                                    [id] => 253
+                                                    [hotel_name] => Four Points Sheraton
+                                                    [room_name] => Deluxe Room
+                                                )
+
+                                        )
+
+                                )
+
+                            [1] => Array
+                                (
+                                    [id] => 131
+                                    [hotel_type_name] => OBEROI LUXURY
+                                    [hotel_type_id] => 19
+                                    [hotels] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [id] => 257
+                                                    [hotel_name] => Oberoi Rajvilas
+                                                    [room_name] => Premier Room
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [4] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => 268
+                            [order_sequence] => 1
+                            [day_count] => 4
+                            [tour_date] => 06-08-2026
+                            [start_day] => 2
+                            [end_day] => 4
+                            [block_id] => 497368
+                            [city_id] => 26
+                            [city_name] => Jaipur
+                            [events] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [id] => 92
+                                            [name] => 2023 - JAI Full day Amber and City tour
+                                            [city_id] => 26
+                                            [description] => 
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [id] => 93
+                                            [name] => 2023 - JAI Airport Departure
+                                            [city_id] => 26
+                                            [description] => <p>Check out from the hotel and transfer to the airport to board your flight.</p>
+                                        )
+
+                                )
+
+                        )
+
+                    [1] => Array
+                        (
+                            [id] => 269
+                            [order_sequence] => 2
+                            [day_count] => 4
+                            [tour_date] => 06-08-2026
+                            [start_day] => 4
+                            [end_day] => 4
+                            [block_id] => 811
+                            [city_id] => 9
+                            [city_name] => Delhi
+                            [events] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [id] => 94
+                                            [name] => 2023 - DEL Airport Departure transfer
+                                            [city_id] => 9
+                                            [description] => <p>Departure transfer to the airport to board your flight.</p>
+                                        )
+
+                                )
+
+                        )
+
+                    [hotels] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [id] => 128
+                                    [hotel_type_name] => Superior Hotels
+                                    [hotel_type_id] => 4
+                                    [hotels] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [id] => 254
+                                                    [hotel_name] => The Park
+                                                    [room_name] => Luxury Room
+                                                )
+
+                                        )
+
+                                )
+
+                            [1] => Array
+                                (
+                                    [id] => 132
+                                    [hotel_type_name] => OBEROI LUXURY
+                                    [hotel_type_id] => 19
+                                    [hotels] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [id] => 258
+                                                    [hotel_name] => The Oberoi New Delhi
+                                                    [room_name] => Deluxe Room
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [inclusion] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 30
+                    [description] => Accommodation in mentioned hotels on double/twin sharing basis.
+                )
+
+            [1] => Array
+                (
+                    [id] => 31
+                    [description] => Monuments entry fees, including Still camera charges (non-professional)
+                )
+
+        )
+
+    [exclusion] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 32
+                    [description] => GST at 5% or as applicable will be charged extra as per Government of India.
+                )
+
+            [1] => Array
+                (
+                    [id] => 33
+                    [description] => Domestic airfare (Estimate US$ 100 each flight)
+                )
+
+            [2] => Array
+                (
+                    [id] => 34
+                    [description] => Video Camera charges
+                )
+
+        )
+
+    [event_inclusion] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 196
+                    [description] => Mohabbat-the-Taj live show in Agra
+                )
+
+            [1] => Array
+                (
+                    [id] => 226
+                    [description] => Exclusive Experience: Elephant or jeep ride at Amber Fort in Jaipur
+                )
+
+        )
+
+    [city_day_list] => Array
+        (
+            [0] => Array
+                (
+                    [city_name] => Delhi
+                    [block_id] => 939248
+                    [start_day] => 1
+                    [end_day] => 2
+                )
+
+            [1] => Array
+                (
+                    [city_name] => Agra
+                    [block_id] => 57597
+                    [start_day] => 2
+                    [end_day] => 3
+                )
+
+            [2] => Array
+                (
+                    [city_name] => Jaipur
+                    [block_id] => 193721
+                    [start_day] => 3
+                    [end_day] => 3
+                )
+
+            [3] => Array
+                (
+                    [city_name] => Jaipur
+                    [block_id] => 497368
+                    [start_day] => 4
+                    [end_day] => 4
+                )
+
+            [4] => Array
+                (
+                    [city_name] => Delhi
+                    [block_id] => 811
+                    [start_day] => 4
+                    [end_day] => 4
+                )
+
+        )
+
+    [hotel_group_list] => Array
+        (
+            [0] => Array
+                (
+                    [hotel_type_id] => 4
+                    [hotel_type_name] => Superior Hotels
+                    [hotel_city_list] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [city_id] => 9
+                                    [city_name] => Delhi
+                                    [day_count] => 1
+                                    [start_day] => 1
+                                    [end_day] => 1
+                                    [hotel_list] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [hotel_name] => The Park
+                                                    [room_name] => Luxury Room
+                                                    [room_code] => luxuryroom
+                                                )
+
+                                        )
+
+                                )
+
+                            [1] => Array
+                                (
+                                    [city_id] => 8
+                                    [city_name] => Agra
+                                    [day_count] => 2
+                                    [start_day] => 2
+                                    [end_day] => 2
+                                    [hotel_list] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [hotel_name] => Lemon Tree
+                                                    [room_name] => Superior Room
+                                                    [room_code] => superiorroom
+                                                )
+
+                                        )
+
+                                )
+
+                            [2] => Array
+                                (
+                                    [city_id] => 26
+                                    [city_name] => Jaipur
+                                    [day_count] => 3
+                                    [start_day] => 3
+                                    [end_day] => 3
+                                    [hotel_list] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [hotel_name] => Ramada
+                                                    [room_name] => Deluxe Room
+                                                    [room_code] => deluxeroom
+                                                )
+
+                                            [1] => Array
+                                                (
+                                                    [hotel_name] => Four Points Sheraton
+                                                    [room_name] => Deluxe Room
+                                                    [room_code] => deluxeroom
+                                                )
+
+                                        )
+
+                                )
+
+                            [3] => Array
+                                (
+                                    [city_id] => 9
+                                    [city_name] => Delhi
+                                    [day_count] => 4
+                                    [start_day] => 4
+                                    [end_day] => 4
+                                    [hotel_list] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [hotel_name] => The Park
+                                                    [room_name] => Luxury Room
+                                                    [room_code] => luxuryroom
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [hotel_type_id] => 19
+                    [hotel_type_name] => OBEROI LUXURY
+                    [hotel_city_list] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [city_id] => 9
+                                    [city_name] => Delhi
+                                    [day_count] => 1
+                                    [start_day] => 1
+                                    [end_day] => 1
+                                    [hotel_list] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [hotel_name] => The Oberoi New Delhi
+                                                    [room_name] => Deluxe Room
+                                                    [room_code] => contract-deluxeroom
+                                                )
+
+                                        )
+
+                                )
+
+                            [1] => Array
+                                (
+                                    [city_id] => 8
+                                    [city_name] => Agra
+                                    [day_count] => 2
+                                    [start_day] => 2
+                                    [end_day] => 2
+                                    [hotel_list] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [hotel_name] => Oberoi Amarvilas
+                                                    [room_name] => Premier Room Taj View
+                                                    [room_code] => ob2-premierroom-cp
+                                                )
+
+                                        )
+
+                                )
+
+                            [2] => Array
+                                (
+                                    [city_id] => 26
+                                    [city_name] => Jaipur
+                                    [day_count] => 3
+                                    [start_day] => 3
+                                    [end_day] => 3
+                                    [hotel_list] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [hotel_name] => Oberoi Rajvilas
+                                                    [room_name] => Premier Room
+                                                    [room_code] => ob2-premierroom-cp
+                                                )
+
+                                        )
+
+                                )
+
+                            [3] => Array
+                                (
+                                    [city_id] => 9
+                                    [city_name] => Delhi
+                                    [day_count] => 4
+                                    [start_day] => 4
+                                    [end_day] => 4
+                                    [hotel_list] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [hotel_name] => The Oberoi New Delhi
+                                                    [room_name] => Deluxe Room
+                                                    [room_code] => contract-deluxeroom
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [id] => 22
+    [name] => test rakesh 1001
+    [duration] => 4
+    [price] => 0
+    [no_of_person] => 2
+    [view_type] => day_view
+    [token] => cb9fb64cd40ac9d3
+)
+
