@@ -557,7 +557,7 @@ $noOfPerson = !empty($tourData['no_of_person']) ? (int)$tourData['no_of_person']
 <?php endif; ?>
 
 <!-- Hotels & Inclusions -->
-<section class="sheet multipage">
+<section class="sheet multipage" style="page-break-before: always; break-before: page;">
   <table style="width:100%; border-collapse: collapse;">
     <thead><tr><td style="height:25mm; padding:0; border:none;"></td></tr></thead>
     <tbody><tr><td style="padding:0; border:none;">
@@ -735,8 +735,8 @@ $noOfPerson = !empty($tourData['no_of_person']) ? (int)$tourData['no_of_person']
   </div>
 
   <div class="terms">
-    <h3>Special Darshan</h3>
-    <p><i>&ldquo;Special Darshan&rdquo; is a permit/arrangement for priority temple entry, bypassing the general outside queue. A shorter queue inside the temple complex may still apply.</i></p>
+    <h3>Domestic Flights</h3>
+    <p>If you would like us to arrange internal domestic flights. The free baggage allowance on domestic flights (Economy class) is 15 kgs for one-piece check-in baggage and 7 kgs for one-piece cabin baggage. Excess check-in baggage can be pre-purchased at time of booking, please let us know at time of booking.</p>
   </div>
 
   <div class="terms">

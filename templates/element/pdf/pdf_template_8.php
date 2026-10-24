@@ -448,12 +448,10 @@ $hasDarshan = !empty($tourData['cities']) && stripos((string)json_encode($tourDa
   </div>
   <?php endif; ?>
 
-  <?php if ($hasDarshan): ?>
   <div class="terms">
-    <h3>Special Darshan</h3>
-    <p><i>&ldquo;Special Darshan&rdquo; is a permit/arrangement for priority temple entry, bypassing the general outside queue. A shorter queue inside the temple complex may still apply.</i></p>
+    <h3>Domestic Flights</h3>
+    <p>If you would like us to arrange internal domestic flights. The free baggage allowance on domestic flights (Economy class) is 15 kgs for one-piece check-in baggage and 7 kgs for one-piece cabin baggage. Excess check-in baggage can be pre-purchased at time of booking, please let us know at time of booking.</p>
   </div>
-  <?php endif; ?>
 
   <div class="terms">
     <h3>Booking Terms</h3>

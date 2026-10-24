@@ -78,6 +78,8 @@ table{width:100%;border-collapse:collapse}
 .price-table tr:nth-child(even) td{background:#fbf8f0}
 .price-table .total{font-weight:800;color:#a87809}
 .note{font-size:7.8pt;color:#5f6470;font-style:italic;margin-top:3mm;text-align:center}
+.price-note-box{margin-top:4mm;padding:4mm 5mm;border:1px solid #eadfca;border-left:3.5px solid var(--gold);border-radius:4px;background:#faf8f3;font-size:8.2pt;line-height:1.55;color:#4e5c70}
+.price-note-box strong{color:var(--navy);letter-spacing:.5px}
 
 .section-intro{margin:1mm 0 6mm}
 .section-intro p{color:var(--muted);font-size:9pt}
@@ -148,6 +150,11 @@ table{width:100%;border-collapse:collapse}
        PREMIUM HOTEL TABLE - PDF SAFE
        Works with Chromium / Browsershot
        ========================================= */
+
+    .hotels-sheet {
+        page-break-before: always !important;
+        break-before: page !important;
+    }
 
     .hotel-section {
         width: 100%;
@@ -333,6 +340,11 @@ table{width:100%;border-collapse:collapse}
 
     /* PDF print settings */
     @media print {
+        .hotels-sheet {
+            page-break-before: always !important;
+            break-before: page !important;
+        }
+
         .hotel-section {
             page-break-inside: avoid;
         }
@@ -420,7 +432,7 @@ $noOfPerson = !empty($tourData['no_of_person']) ? (int)$tourData['no_of_person']
     <div class="meta"><label>Room configuration</label><strong><?php echo $noOfPerson; ?> Guests</strong></div>
   </div>
 
-  <?php if (!empty($tourData['map_image'])): ?>
+  <?php /* if (!empty($tourData['map_image'])): ?>
   <div class="map-wrap" style="margin-top: 8mm; text-align: center;">
     <img src="<?php echo h($tourData['map_image']); ?>" style="max-width: 100%; height: auto; max-height: 120mm; border-radius: 8px; border: 1px solid #eadfca; box-shadow: 0 4px 12px rgba(0,0,0,0.05);" alt="Tour Map Route">
   </div>
@@ -429,7 +441,23 @@ $noOfPerson = !empty($tourData['no_of_person']) ? (int)$tourData['no_of_person']
   <div class="map-wrap" style="margin-top: 8mm; text-align: center;">
     <img src="https://server.elegantjourneys.com/images/tours/indian-stickers.jpeg" style="max-width: 100%; height: auto; max-height: 140mm; border-radius: 8px; border: 1px solid #eadfca; box-shadow: 0 4px 12px rgba(0,0,0,0.05);" alt="Tour Map Route">
   </div>
-  <?php endif; ?>
+  <?php endif; */ ?>
+
+  <div class="price-wrap" style="page-break-inside: avoid;">
+    <div class="price-title">TOUR PRICE</div>
+    <table class="price-table">
+      <thead><tr><th>Package</th><th>Price Per Person</th><th>Total Package Price</th></tr></thead>
+      <tbody>
+        <tr><td><b>4-Star</b></td><td>$ 2,095</td><td>$ 2,095 &times; 2 Guests = <span class="total">$ 4,190</span></td></tr>
+        <tr><td><b>5-Star</b></td><td>$ 2,585</td><td>$ 2,585 &times; 2 Guests = <span class="total">$ 5,170</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="note" style="margin-bottom: 3.5mm;">Prices above are exclusive of GST. GST @ 5% is charged additionally on top, as per Indian Government rules.</div>
+
+  <div class="price-note-box" style="margin-top: 3.5mm; padding: 3.5mm 4.5mm; border: 1px solid #eadfca; border-left: 3.5px solid #c99a32; border-radius: 4px; background: #faf8f3; font-size: 8pt; line-height: 1.5; color: #4e5c70;">
+    <strong style="color: #17345f; letter-spacing: 0.5px;">NOTES ON PRICES:</strong> We believe that value for money is important, we want you to travel on our great value ALL INCLUSIVE TOURS with ABSOLUTELY NO HIDDEN CHARGES. When comparing prices with others, ensure you are comparing like for like as often there may be a cheaper option (not offering such an exhaustive list of tour inclusions or personalized services), but there may be hidden extras or the quality may not be as good. As a tour operator, our main focus is to offer the best possible service to our customers. We believe a great tour experience is all about the quality of service, transport, accommodation, and guides.
+  </div>
 
 </section>
 
@@ -535,7 +563,7 @@ $noOfPerson = !empty($tourData['no_of_person']) ? (int)$tourData['no_of_person']
 <?php endif; ?>
 
 <!-- Hotels & Inclusions -->
-<section class="sheet multipage">
+<section class="sheet multipage hotels-sheet" style="page-break-before: always; break-before: page;">
   <table style="width:100%; border-collapse: collapse;">
     <thead><tr><td style="height:25mm; padding:0; border:none;"></td></tr></thead>
     <tbody><tr><td style="padding:0; border:none;">
@@ -689,18 +717,7 @@ $noOfPerson = !empty($tourData['no_of_person']) ? (int)$tourData['no_of_person']
   
    <?php endif; ?>
 
-  <div class="price-wrap" style="page-break-inside: avoid;">
-    <div class="price-title">TOUR PRICE</div>
-    <table class="price-table">
-      <thead><tr><th>Package</th><th>Price Per Person</th><th>Total Package Price</th></tr></thead>
-      <tbody>
-        <tr><td><b>4-Star</b></td><td>$ 2,095</td><td>$ 2,095 &times; 2 Guests = <span class="total">$ 4,190</span></td></tr>
-        <tr><td><b>5-Star</b></td><td>$ 2,585</td><td>$ 2,585 &times; 2 Guests = <span class="total">$ 5,170</span></td></tr>
-      </tbody>
-    </table>
-  </div>
-  <div class="note" style="margin-bottom: 6mm;">Prices above are exclusive of GST. GST @ 5% is charged additionally on top, as per Indian Government rules.</div>
-
+  
   <div class="columns">
     <?php if (!empty($tourData['inclusion'])): ?>
     <div class="info-card">
@@ -725,8 +742,8 @@ $noOfPerson = !empty($tourData['no_of_person']) ? (int)$tourData['no_of_person']
   </div>
 
   <div class="terms">
-    <h3>Special Darshan</h3>
-    <p><i>&ldquo;Special Darshan&rdquo; is a permit/arrangement for priority temple entry, bypassing the general outside queue. A shorter queue inside the temple complex may still apply.</i></p>
+    <h3>Domestic Flights</h3>
+    <p>If you would like us to arrange internal domestic flights. The free baggage allowance on domestic flights (Economy class) is 15 kgs for one-piece check-in baggage and 7 kgs for one-piece cabin baggage. Excess check-in baggage can be pre-purchased at time of booking, please let us know at time of booking.</p>
   </div>
 
   <div class="terms">
