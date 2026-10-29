@@ -611,6 +611,7 @@ $noOfPerson = !empty($tourData['no_of_person']) ? (int)$tourData['no_of_person']
     <h2>Hotels</h2>
   </div>
 
+  <?php if (false): /* old hotel table, kept for reference */ ?>
   <!-- <div class="hotel-table">
     <table>
       <thead>
@@ -651,6 +652,7 @@ $noOfPerson = !empty($tourData['no_of_person']) ? (int)$tourData['no_of_person']
   </div>
   <div class="hotel-note">Note: Hotel category to be confirmed by the traveller; both categories are available for this itinerary.</div>
    -->
+  <?php endif; ?>
   
 <div class="hotel-section">
 
@@ -678,7 +680,16 @@ $noOfPerson = !empty($tourData['no_of_person']) ? (int)$tourData['no_of_person']
             <tbody>
 
                 <?php
-                $firstGroup = $tourData['hotel_group_list'][0]['hotel_city_list'];
+                // one row per city stay across all hotel levels, in day order
+                $firstGroup = [];
+                foreach ($tourData['hotel_group_list'] as $hotelGroupList) {
+                    foreach (($hotelGroupList['hotel_city_list'] ?? []) as $groupCity) {
+                        $firstGroup[($groupCity['city_name'] ?? '') . '|' . ($groupCity['start_day'] ?? '')] = $groupCity;
+                    }
+                }
+                uasort($firstGroup, function ($a, $b) {
+                    return ($a['start_day'] ?? 0) <=> ($b['start_day'] ?? 0);
+                });
 
                 foreach ($firstGroup as $index => $cityData):
 
@@ -705,11 +716,17 @@ $noOfPerson = !empty($tourData['no_of_person']) ? (int)$tourData['no_of_person']
                         <?php foreach ($tourData['hotel_group_list'] as $hotelGroupList): ?>
 
                             <?php
-                            $currentCityList =
-                                $hotelGroupList['hotel_city_list'][$index];
+                            // match the same city/stay in this hotel level; levels may not list cities in the same order
+                            $currentCityList = null;
+                            foreach (($hotelGroupList['hotel_city_list'] ?? []) as $groupCity) {
+                                if (($groupCity['city_name'] ?? '') === ($cityData['city_name'] ?? '')
+                                    && ($groupCity['start_day'] ?? null) == ($cityData['start_day'] ?? null)) {
+                                    $currentCityList = $groupCity;
+                                    break;
+                                }
+                            }
 
-                            $hotelList =
-                                $currentCityList['hotel_list'];
+                            $hotelList = $currentCityList['hotel_list'] ?? [];
                             ?>
 
                             <td>
