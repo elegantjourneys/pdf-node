@@ -32,7 +32,6 @@ class ToursController extends AppController
         //Configure::write('debug', true);
     }
 
-   
      public function pdf($token = '')
     {
         $this->viewBuilder()->enableAutoLayout(false);
