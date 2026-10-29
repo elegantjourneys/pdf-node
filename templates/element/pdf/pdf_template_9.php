@@ -432,17 +432,6 @@ $noOfPerson = !empty($tourData['no_of_person']) ? (int)$tourData['no_of_person']
     <div class="meta"><label>Room configuration</label><strong><?php echo $noOfPerson; ?> Guests</strong></div>
   </div>
 
-  <?php /* if (!empty($tourData['map_image'])): ?>
-  <div class="map-wrap" style="margin-top: 8mm; text-align: center;">
-    <img src="<?php echo h($tourData['map_image']); ?>" style="max-width: 100%; height: auto; max-height: 120mm; border-radius: 8px; border: 1px solid #eadfca; box-shadow: 0 4px 12px rgba(0,0,0,0.05);" alt="Tour Map Route">
-  </div>
-  <?php else: ?>
-  <!-- Placeholder for map if no dynamic map_image is available -->
-  <div class="map-wrap" style="margin-top: 8mm; text-align: center;">
-    <img src="https://server.elegantjourneys.com/images/tours/indian-stickers.jpeg" style="max-width: 100%; height: auto; max-height: 140mm; border-radius: 8px; border: 1px solid #eadfca; box-shadow: 0 4px 12px rgba(0,0,0,0.05);" alt="Tour Map Route">
-  </div>
-  <?php endif; */ ?>
-
   <div class="price-wrap" style="page-break-inside: avoid;">
     <div class="price-title">TOUR PRICE</div>
     <table class="price-table">
@@ -611,55 +600,7 @@ $noOfPerson = !empty($tourData['no_of_person']) ? (int)$tourData['no_of_person']
     <h2>Hotels</h2>
   </div>
 
-  <?php if (false): /* old hotel table, kept for reference */ ?>
-  <!-- <div class="hotel-table">
-    <table>
-      <thead>
-        <tr>
-          <th style="width:22%">City</th>
-          <?php foreach ($tourData['hotel_group_list'] as $hotelGroupList): ?>
-            <th><?= h($hotelGroupList['hotel_type_name']) ?> Category</th>
-          <?php endforeach; ?>
-        </tr>
-      </thead>
-      <tbody>
-        <?php 
-        $firstGroup = $tourData['hotel_group_list'][0]['hotel_city_list'];
-        foreach ($firstGroup as $index => $cityData):
-            $nights = ($cityData['end_day'] - $cityData['start_day']) + 1;
-        ?>
-        <tr>
-            <td class="city"><?= h($cityData['city_name']) ?> (<?= h($nights) ?>N)</td>
-            <?php foreach ($tourData['hotel_group_list'] as $hotelGroupList): 
-                $currentCityList = $hotelGroupList['hotel_city_list'][$index];
-            ?>
-            <td>
-                <?php 
-                $hotelCount = count($currentCityList['hotel_list']);
-                foreach ($currentCityList['hotel_list'] as $i => $hotelList): 				  
-                    echo h($hotelList['hotel_name']) . "<br><small>( ".h($hotelList['room_name'])." )</small>";
-                    if ($i < $hotelCount - 1) {
-                        echo "<br>";
-                    }
-                endforeach; 
-                ?>
-            </td>
-            <?php endforeach; ?>
-        </tr>
-        <?php endforeach; ?>
-      </tbody>
-    </table>
-  </div>
-  <div class="hotel-note">Note: Hotel category to be confirmed by the traveller; both categories are available for this itinerary.</div>
-   -->
-  <?php endif; ?>
-  
 <div class="hotel-section">
-
-   <!--  <div class="hotel-section-title">
-        <span class="accent"></span>
-        Accommodation Options
-    </div> -->
 
     <div class="hotel-table">
 

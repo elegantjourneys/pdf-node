@@ -78626,3 +78626,941 @@ Cake\Http\Server::run() C:\wamp64\www\elegant-pdf-node\vendor\cakephp\cakephp\sr
 
 )
 
+2026-10-29 09:27:53 warning: Undefined array key "event_inclusion"
+Request URL: /tours/pdf/be54110bef8ed386
+Trace:
+include C:\wamp64\www\elegant-pdf-node\templates\element\pdf\pdf_template_9.php, line 779
+Cake\View\View::_evaluate() C:\wamp64\www\elegant-pdf-node\vendor\cakephp\cakephp\src\View\View.php, line 1220
+Cake\View\View::_render() C:\wamp64\www\elegant-pdf-node\vendor\cakephp\cakephp\src\View\View.php, line 1177
+Cake\View\View::_renderElement() C:\wamp64\www\elegant-pdf-node\vendor\cakephp\cakephp\src\View\View.php, line 1710
+Cake\View\View::element() C:\wamp64\www\elegant-pdf-node\vendor\cakephp\cakephp\src\View\View.php, line 699
+include C:\wamp64\www\elegant-pdf-node\templates\Tours\pdf\pdf_version9_editable.php, line 159
+Cake\View\View::_evaluate() C:\wamp64\www\elegant-pdf-node\vendor\cakephp\cakephp\src\View\View.php, line 1220
+Cake\View\View::_render() C:\wamp64\www\elegant-pdf-node\vendor\cakephp\cakephp\src\View\View.php, line 1177
+Cake\View\View::render() C:\wamp64\www\elegant-pdf-node\vendor\cakephp\cakephp\src\View\View.php, line 808
+Cake\Controller\Controller::render() C:\wamp64\www\elegant-pdf-node\vendor\cakephp\cakephp\src\Controller\Controller.php, line 773
+App\Controller\ToursController::pdf() C:\wamp64\www\elegant-pdf-node\src\Controller\ToursController.php, line 49
+Cake\Controller\Controller::invokeAction() C:\wamp64\www\elegant-pdf-node\vendor\cakephp\cakephp\src\Controller\Controller.php, line 547
+Cake\Controller\ControllerFactory::handle() C:\wamp64\www\elegant-pdf-node\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php, line 139
+Cake\Controller\ControllerFactory::invoke() C:\wamp64\www\elegant-pdf-node\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php, line 114
+Cake\Http\BaseApplication::handle() C:\wamp64\www\elegant-pdf-node\vendor\cakephp\cakephp\src\Http\BaseApplication.php, line 320
+Cake\Http\Runner::handle() C:\wamp64\www\elegant-pdf-node\vendor\cakephp\cakephp\src\Http\Runner.php, line 86
+Cake\Http\Middleware\CsrfProtectionMiddleware::process() C:\wamp64\www\elegant-pdf-node\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php, line 174
+Cake\Http\Runner::handle() C:\wamp64\www\elegant-pdf-node\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Middleware\BodyParserMiddleware::process() C:\wamp64\www\elegant-pdf-node\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php, line 157
+Cake\Http\Runner::handle() C:\wamp64\www\elegant-pdf-node\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Authentication\Middleware\AuthenticationMiddleware::process() C:\wamp64\www\elegant-pdf-node\vendor\cakephp\authentication\src\Middleware\AuthenticationMiddleware.php, line 124
+Cake\Http\Runner::handle() C:\wamp64\www\elegant-pdf-node\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Routing\Middleware\RoutingMiddleware::process() C:\wamp64\www\elegant-pdf-node\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php, line 186
+Cake\Http\Runner::handle() C:\wamp64\www\elegant-pdf-node\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Routing\Middleware\AssetMiddleware::process() C:\wamp64\www\elegant-pdf-node\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() C:\wamp64\www\elegant-pdf-node\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() C:\wamp64\www\elegant-pdf-node\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() C:\wamp64\www\elegant-pdf-node\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner::run() C:\wamp64\www\elegant-pdf-node\vendor\cakephp\cakephp\src\Http\Runner.php, line 67
+Cake\Http\Server::run() C:\wamp64\www\elegant-pdf-node\vendor\cakephp\cakephp\src\Http\Server.php, line 90
+[main] C:\wamp64\www\elegant-pdf-node\webroot\index.php, line 40
+
+2026-10-29 09:27:53 warning: foreach() argument must be of type array|object, null given
+Request URL: /tours/pdf/be54110bef8ed386
+Trace:
+include C:\wamp64\www\elegant-pdf-node\templates\element\pdf\pdf_template_9.php, line 779
+Cake\View\View::_evaluate() C:\wamp64\www\elegant-pdf-node\vendor\cakephp\cakephp\src\View\View.php, line 1220
+Cake\View\View::_render() C:\wamp64\www\elegant-pdf-node\vendor\cakephp\cakephp\src\View\View.php, line 1177
+Cake\View\View::_renderElement() C:\wamp64\www\elegant-pdf-node\vendor\cakephp\cakephp\src\View\View.php, line 1710
+Cake\View\View::element() C:\wamp64\www\elegant-pdf-node\vendor\cakephp\cakephp\src\View\View.php, line 699
+include C:\wamp64\www\elegant-pdf-node\templates\Tours\pdf\pdf_version9_editable.php, line 159
+Cake\View\View::_evaluate() C:\wamp64\www\elegant-pdf-node\vendor\cakephp\cakephp\src\View\View.php, line 1220
+Cake\View\View::_render() C:\wamp64\www\elegant-pdf-node\vendor\cakephp\cakephp\src\View\View.php, line 1177
+Cake\View\View::render() C:\wamp64\www\elegant-pdf-node\vendor\cakephp\cakephp\src\View\View.php, line 808
+Cake\Controller\Controller::render() C:\wamp64\www\elegant-pdf-node\vendor\cakephp\cakephp\src\Controller\Controller.php, line 773
+App\Controller\ToursController::pdf() C:\wamp64\www\elegant-pdf-node\src\Controller\ToursController.php, line 49
+Cake\Controller\Controller::invokeAction() C:\wamp64\www\elegant-pdf-node\vendor\cakephp\cakephp\src\Controller\Controller.php, line 547
+Cake\Controller\ControllerFactory::handle() C:\wamp64\www\elegant-pdf-node\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php, line 139
+Cake\Controller\ControllerFactory::invoke() C:\wamp64\www\elegant-pdf-node\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php, line 114
+Cake\Http\BaseApplication::handle() C:\wamp64\www\elegant-pdf-node\vendor\cakephp\cakephp\src\Http\BaseApplication.php, line 320
+Cake\Http\Runner::handle() C:\wamp64\www\elegant-pdf-node\vendor\cakephp\cakephp\src\Http\Runner.php, line 86
+Cake\Http\Middleware\CsrfProtectionMiddleware::process() C:\wamp64\www\elegant-pdf-node\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php, line 174
+Cake\Http\Runner::handle() C:\wamp64\www\elegant-pdf-node\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Middleware\BodyParserMiddleware::process() C:\wamp64\www\elegant-pdf-node\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php, line 157
+Cake\Http\Runner::handle() C:\wamp64\www\elegant-pdf-node\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Authentication\Middleware\AuthenticationMiddleware::process() C:\wamp64\www\elegant-pdf-node\vendor\cakephp\authentication\src\Middleware\AuthenticationMiddleware.php, line 124
+Cake\Http\Runner::handle() C:\wamp64\www\elegant-pdf-node\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Routing\Middleware\RoutingMiddleware::process() C:\wamp64\www\elegant-pdf-node\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php, line 186
+Cake\Http\Runner::handle() C:\wamp64\www\elegant-pdf-node\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Routing\Middleware\AssetMiddleware::process() C:\wamp64\www\elegant-pdf-node\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() C:\wamp64\www\elegant-pdf-node\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() C:\wamp64\www\elegant-pdf-node\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() C:\wamp64\www\elegant-pdf-node\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner::run() C:\wamp64\www\elegant-pdf-node\vendor\cakephp\cakephp\src\Http\Runner.php, line 67
+Cake\Http\Server::run() C:\wamp64\www\elegant-pdf-node\vendor\cakephp\cakephp\src\Http\Server.php, line 90
+[main] C:\wamp64\www\elegant-pdf-node\webroot\index.php, line 40
+
+2026-10-29 09:27:53 error: Array
+(
+    [cities] => Array
+        (
+            [0] => Array
+                (
+                    [city_name] => Delhi
+                    [block_id] => 89546
+                    [start_day] => 1
+                    [end_day] => 1
+                    [start_date] => 01-01-1970
+                    [end_date] => 01-01-1970
+                    [events] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [id] => 40
+                                    [name] => 2023 - DEL Arrival Airport Transfer w/ Vehicle cost
+                                    [event_id] => 96
+                                    [description] => <p>Welcome to Delhi Airport; our team will assist you upon arrival and    transfer you to your pre-booked hotel. Please note the standard check-in    time is 2 pm at the hotels.<br /><br />New Delhi is the capital of India,    has been inhabited continuously since the 6th century BCE and has   served  as the capital of multiple kingdoms and empires throughout its   history.  In the 1920s, it was redesigned by Sir Edwin Lutyens and Sir   Herbert  Baker. Today, Delhi is a bustling metropolis that serves as a   vibrant  hub of international arts and culture and a thriving commercial   centre.</p>
+                                )
+
+                            [1] => Array
+                                (
+                                    [id] => 41
+                                    [name] => TMP - GT-80 - Drive to Agra + Vehicle cost D3 to D6 
+                                    [event_id] => 232
+                                    [description] => 
+                                )
+
+                        )
+
+                    [hotels] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [id] => 45
+                                    [hotel_type_name] => PREMIUM LEVEL
+                                    [hotel_type_id] => 5
+                                    [hotels] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [id] => 89
+                                                    [hotel_name] => Royale Sarovar Portico
+                                                    [room_name] => Superior Room
+                                                )
+
+                                            [1] => Array
+                                                (
+                                                    [id] => 90
+                                                    [hotel_name] => DoubleTree Hilton
+                                                    [room_name] => Guest Room
+                                                )
+
+                                            [2] => Array
+                                                (
+                                                    [id] => 91
+                                                    [hotel_name] => Trident 
+                                                    [room_name] => Deluxe Garden View
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [city_name] => Agra
+                    [block_id] => 415462
+                    [start_day] => 1
+                    [end_day] => 2
+                    [start_date] => 01-01-1970
+                    [end_date] => 02-01-1970
+                    [events] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [id] => 42
+                                    [name] => 2023 - AGR Arrive by surface and check-in
+                                    [event_id] => 112
+                                    [description] => <p>Upon arriving in Agra, you proceed to check in at your hotel.<br /><br />Agra,  was the capital city of the Mughal Empire and served as a testament to  India's resilience during this era. With their wealth and talent, the  Mughals immortalised the city in stone and marble, leaving a legacy of  exquisite Mughal architecture. The Taj Mahal is the most well-known  monument in Agra, but other noteworthy sites include the Red Fort,  Sikandra, the tomb of Itmad-ud-Daulah, and Fatehpur Sikri. These  buildings offer a glimpse into India's history's grand and fascinating  era.</p>
+                                )
+
+                            [1] => Array
+                                (
+                                    [id] => 43
+                                    [name] => 2023 - AGRA Evening Kalakriti Mohabbat-the-Taj show
+                                    [event_id] => 165
+                                    [description] => 
+                                )
+
+                        )
+
+                    [hotels] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [id] => 45
+                                    [hotel_type_name] => PREMIUM LEVEL
+                                    [hotel_type_id] => 5
+                                    [hotels] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [id] => 89
+                                                    [hotel_name] => Royale Sarovar Portico
+                                                    [room_name] => Superior Room
+                                                )
+
+                                            [1] => Array
+                                                (
+                                                    [id] => 90
+                                                    [hotel_name] => DoubleTree Hilton
+                                                    [room_name] => Guest Room
+                                                )
+
+                                            [2] => Array
+                                                (
+                                                    [id] => 91
+                                                    [hotel_name] => Trident 
+                                                    [room_name] => Deluxe Garden View
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [city_name] => Jaipur
+                    [block_id] => 5747
+                    [start_day] => 2
+                    [end_day] => 3
+                    [start_date] => 02-01-1970
+                    [end_date] => 03-01-1970
+                    [events] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [id] => 44
+                                    [name] => 2023 - JAI Arrive by surface in Jaipur. Check-in at the hotel.
+                                    [event_id] => 113
+                                    [description] => <p>Jaipur, Rajasthan's renowned walled capital city, is also known as the    "Pink City." This nickname originates from the city painted pink in  1876   as a symbol of the locals' warm welcome to the visit of Queen  Victoria   of England and the Prince of Wales.<br /><br />Upon arrival in Jaipur, check-in at the hotel.</p>
+                                )
+
+                            [1] => Array
+                                (
+                                    [id] => 45
+                                    [name] => 2023 - JAI Half day Amber Fort
+                                    [event_id] => 109
+                                    [description] => 
+                                )
+
+                        )
+
+                    [hotels] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [id] => 46
+                                    [hotel_type_name] => PREMIUM LEVEL
+                                    [hotel_type_id] => 5
+                                    [hotels] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [id] => 92
+                                                    [hotel_name] => Hyatt Regency
+                                                    [room_name] => Guest Room
+                                                )
+
+                                            [1] => Array
+                                                (
+                                                    [id] => 93
+                                                    [hotel_name] => Hilton
+                                                    [room_name] => Guest Room
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [3] => Array
+                (
+                    [city_name] => Delhi
+                    [block_id] => 17792
+                    [start_day] => 3
+                    [end_day] => 3
+                    [start_date] => 03-01-1970
+                    [end_date] => 03-01-1970
+                    [events] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [id] => 46
+                                    [name] => 2023 - DEL Airport Departure transfer
+                                    [event_id] => 115
+                                    [description] => 
+                                )
+
+                        )
+
+                    [hotels] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [id] => 47
+                                    [hotel_type_name] => PREMIUM LEVEL
+                                    [hotel_type_id] => 5
+                                    [hotels] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [id] => 94
+                                                    [hotel_name] => Sheraton Saket
+                                                    [room_name] => Deluxe Room
+                                                )
+
+                                            [1] => Array
+                                                (
+                                                    [id] => 95
+                                                    [hotel_name] => The Connaught
+                                                    [room_name] => Superior Room
+                                                )
+
+                                            [2] => Array
+                                                (
+                                                    [id] => 96
+                                                    [hotel_name] => Taj Ambassador
+                                                    [room_name] => Superior Room
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [inclusion] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 21
+                    [description] => Accommodation in mentioned hotels on double/twin sharing basis.
+                )
+
+            [1] => Array
+                (
+                    [id] => 22
+                    [description] => Private chauffeur-driven AC vehicle (Toyota Crysta or similar)
+                )
+
+        )
+
+    [exclusion] => Array
+        (
+        )
+
+    [city_day_list] => Array
+        (
+            [0] => Array
+                (
+                    [city_name] => Delhi
+                    [block_id] => 89546
+                    [start_day] => 1
+                    [end_day] => 1
+                )
+
+            [1] => Array
+                (
+                    [city_name] => Agra
+                    [block_id] => 415462
+                    [start_day] => 1
+                    [end_day] => 2
+                )
+
+            [2] => Array
+                (
+                    [city_name] => Jaipur
+                    [block_id] => 5747
+                    [start_day] => 2
+                    [end_day] => 3
+                )
+
+            [3] => Array
+                (
+                    [city_name] => Delhi
+                    [block_id] => 17792
+                    [start_day] => 3
+                    [end_day] => 3
+                )
+
+        )
+
+    [hotel_group_list] => Array
+        (
+            [0] => Array
+                (
+                    [hotel_type_id] => 5
+                    [hotel_type_name] => PREMIUM LEVEL
+                    [hotel_city_list] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [city_id] => 8
+                                    [city_name] => Agra
+                                    [day_count] => 1
+                                    [start_day] => 1
+                                    [end_day] => 1
+                                    [hotel_list] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [hotel_name] => Royale Sarovar Portico
+                                                    [room_name] => Superior Room
+                                                    [room_code] => superiorroom
+                                                )
+
+                                            [1] => Array
+                                                (
+                                                    [hotel_name] => DoubleTree Hilton
+                                                    [room_name] => Guest Room
+                                                    [room_code] => dtguestroom
+                                                )
+
+                                            [2] => Array
+                                                (
+                                                    [hotel_name] => Trident 
+                                                    [room_name] => Deluxe Garden View
+                                                    [room_code] => contract-deluxe-gv
+                                                )
+
+                                        )
+
+                                )
+
+                            [1] => Array
+                                (
+                                    [city_id] => 26
+                                    [city_name] => Jaipur
+                                    [day_count] => 2
+                                    [start_day] => 2
+                                    [end_day] => 2
+                                    [hotel_list] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [hotel_name] => Hyatt Regency
+                                                    [room_name] => Guest Room
+                                                    [room_code] => guestroom
+                                                )
+
+                                            [1] => Array
+                                                (
+                                                    [hotel_name] => Hilton
+                                                    [room_name] => Guest Room
+                                                    [room_code] => hiltonguestroom
+                                                )
+
+                                        )
+
+                                )
+
+                            [2] => Array
+                                (
+                                    [city_id] => 9
+                                    [city_name] => Delhi
+                                    [day_count] => 3
+                                    [start_day] => 3
+                                    [end_day] => 3
+                                    [hotel_list] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [hotel_name] => Sheraton Saket
+                                                    [room_name] => Deluxe Room
+                                                    [room_code] => deluxeroom
+                                                )
+
+                                            [1] => Array
+                                                (
+                                                    [hotel_name] => The Connaught
+                                                    [room_name] => Superior Room
+                                                    [room_code] => superiorroom
+                                                )
+
+                                            [2] => Array
+                                                (
+                                                    [hotel_name] => Taj Ambassador
+                                                    [room_name] => Superior Room
+                                                    [room_code] => superiorroom
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [id] => 9
+    [name] => test tour city view 3 days
+    [duration] => 3
+    [price] => 0
+    [no_of_person] => 2
+    [view_type] => city_view
+    [token] => be54110bef8ed386
+    [final_price] => 119038
+    [final_prices_by_hotel_type] => Array
+        (
+        )
+
+)
+
+2026-10-29 09:27:53 error: Array
+(
+    [cities] => Array
+        (
+            [0] => Array
+                (
+                    [city_name] => Delhi
+                    [block_id] => 89546
+                    [start_day] => 1
+                    [end_day] => 1
+                    [start_date] => 01-01-1970
+                    [end_date] => 01-01-1970
+                    [events] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [id] => 40
+                                    [name] => 2023 - DEL Arrival Airport Transfer w/ Vehicle cost
+                                    [event_id] => 96
+                                    [description] => <p>Welcome to Delhi Airport; our team will assist you upon arrival and    transfer you to your pre-booked hotel. Please note the standard check-in    time is 2 pm at the hotels.<br /><br />New Delhi is the capital of India,    has been inhabited continuously since the 6th century BCE and has   served  as the capital of multiple kingdoms and empires throughout its   history.  In the 1920s, it was redesigned by Sir Edwin Lutyens and Sir   Herbert  Baker. Today, Delhi is a bustling metropolis that serves as a   vibrant  hub of international arts and culture and a thriving commercial   centre.</p>
+                                )
+
+                            [1] => Array
+                                (
+                                    [id] => 41
+                                    [name] => TMP - GT-80 - Drive to Agra + Vehicle cost D3 to D6 
+                                    [event_id] => 232
+                                    [description] => 
+                                )
+
+                        )
+
+                    [hotels] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [id] => 45
+                                    [hotel_type_name] => PREMIUM LEVEL
+                                    [hotel_type_id] => 5
+                                    [hotels] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [id] => 89
+                                                    [hotel_name] => Royale Sarovar Portico
+                                                    [room_name] => Superior Room
+                                                )
+
+                                            [1] => Array
+                                                (
+                                                    [id] => 90
+                                                    [hotel_name] => DoubleTree Hilton
+                                                    [room_name] => Guest Room
+                                                )
+
+                                            [2] => Array
+                                                (
+                                                    [id] => 91
+                                                    [hotel_name] => Trident 
+                                                    [room_name] => Deluxe Garden View
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [city_name] => Agra
+                    [block_id] => 415462
+                    [start_day] => 1
+                    [end_day] => 2
+                    [start_date] => 01-01-1970
+                    [end_date] => 02-01-1970
+                    [events] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [id] => 42
+                                    [name] => 2023 - AGR Arrive by surface and check-in
+                                    [event_id] => 112
+                                    [description] => <p>Upon arriving in Agra, you proceed to check in at your hotel.<br /><br />Agra,  was the capital city of the Mughal Empire and served as a testament to  India's resilience during this era. With their wealth and talent, the  Mughals immortalised the city in stone and marble, leaving a legacy of  exquisite Mughal architecture. The Taj Mahal is the most well-known  monument in Agra, but other noteworthy sites include the Red Fort,  Sikandra, the tomb of Itmad-ud-Daulah, and Fatehpur Sikri. These  buildings offer a glimpse into India's history's grand and fascinating  era.</p>
+                                )
+
+                            [1] => Array
+                                (
+                                    [id] => 43
+                                    [name] => 2023 - AGRA Evening Kalakriti Mohabbat-the-Taj show
+                                    [event_id] => 165
+                                    [description] => 
+                                )
+
+                        )
+
+                    [hotels] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [id] => 45
+                                    [hotel_type_name] => PREMIUM LEVEL
+                                    [hotel_type_id] => 5
+                                    [hotels] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [id] => 89
+                                                    [hotel_name] => Royale Sarovar Portico
+                                                    [room_name] => Superior Room
+                                                )
+
+                                            [1] => Array
+                                                (
+                                                    [id] => 90
+                                                    [hotel_name] => DoubleTree Hilton
+                                                    [room_name] => Guest Room
+                                                )
+
+                                            [2] => Array
+                                                (
+                                                    [id] => 91
+                                                    [hotel_name] => Trident 
+                                                    [room_name] => Deluxe Garden View
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [city_name] => Jaipur
+                    [block_id] => 5747
+                    [start_day] => 2
+                    [end_day] => 3
+                    [start_date] => 02-01-1970
+                    [end_date] => 03-01-1970
+                    [events] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [id] => 44
+                                    [name] => 2023 - JAI Arrive by surface in Jaipur. Check-in at the hotel.
+                                    [event_id] => 113
+                                    [description] => <p>Jaipur, Rajasthan's renowned walled capital city, is also known as the    "Pink City." This nickname originates from the city painted pink in  1876   as a symbol of the locals' warm welcome to the visit of Queen  Victoria   of England and the Prince of Wales.<br /><br />Upon arrival in Jaipur, check-in at the hotel.</p>
+                                )
+
+                            [1] => Array
+                                (
+                                    [id] => 45
+                                    [name] => 2023 - JAI Half day Amber Fort
+                                    [event_id] => 109
+                                    [description] => 
+                                )
+
+                        )
+
+                    [hotels] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [id] => 46
+                                    [hotel_type_name] => PREMIUM LEVEL
+                                    [hotel_type_id] => 5
+                                    [hotels] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [id] => 92
+                                                    [hotel_name] => Hyatt Regency
+                                                    [room_name] => Guest Room
+                                                )
+
+                                            [1] => Array
+                                                (
+                                                    [id] => 93
+                                                    [hotel_name] => Hilton
+                                                    [room_name] => Guest Room
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [3] => Array
+                (
+                    [city_name] => Delhi
+                    [block_id] => 17792
+                    [start_day] => 3
+                    [end_day] => 3
+                    [start_date] => 03-01-1970
+                    [end_date] => 03-01-1970
+                    [events] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [id] => 46
+                                    [name] => 2023 - DEL Airport Departure transfer
+                                    [event_id] => 115
+                                    [description] => 
+                                )
+
+                        )
+
+                    [hotels] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [id] => 47
+                                    [hotel_type_name] => PREMIUM LEVEL
+                                    [hotel_type_id] => 5
+                                    [hotels] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [id] => 94
+                                                    [hotel_name] => Sheraton Saket
+                                                    [room_name] => Deluxe Room
+                                                )
+
+                                            [1] => Array
+                                                (
+                                                    [id] => 95
+                                                    [hotel_name] => The Connaught
+                                                    [room_name] => Superior Room
+                                                )
+
+                                            [2] => Array
+                                                (
+                                                    [id] => 96
+                                                    [hotel_name] => Taj Ambassador
+                                                    [room_name] => Superior Room
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [inclusion] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 21
+                    [description] => Accommodation in mentioned hotels on double/twin sharing basis.
+                )
+
+            [1] => Array
+                (
+                    [id] => 22
+                    [description] => Private chauffeur-driven AC vehicle (Toyota Crysta or similar)
+                )
+
+        )
+
+    [exclusion] => Array
+        (
+        )
+
+    [city_day_list] => Array
+        (
+            [0] => Array
+                (
+                    [city_name] => Delhi
+                    [block_id] => 89546
+                    [start_day] => 1
+                    [end_day] => 1
+                )
+
+            [1] => Array
+                (
+                    [city_name] => Agra
+                    [block_id] => 415462
+                    [start_day] => 1
+                    [end_day] => 2
+                )
+
+            [2] => Array
+                (
+                    [city_name] => Jaipur
+                    [block_id] => 5747
+                    [start_day] => 2
+                    [end_day] => 3
+                )
+
+            [3] => Array
+                (
+                    [city_name] => Delhi
+                    [block_id] => 17792
+                    [start_day] => 3
+                    [end_day] => 3
+                )
+
+        )
+
+    [hotel_group_list] => Array
+        (
+            [0] => Array
+                (
+                    [hotel_type_id] => 5
+                    [hotel_type_name] => PREMIUM LEVEL
+                    [hotel_city_list] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [city_id] => 8
+                                    [city_name] => Agra
+                                    [day_count] => 1
+                                    [start_day] => 1
+                                    [end_day] => 1
+                                    [hotel_list] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [hotel_name] => Royale Sarovar Portico
+                                                    [room_name] => Superior Room
+                                                    [room_code] => superiorroom
+                                                )
+
+                                            [1] => Array
+                                                (
+                                                    [hotel_name] => DoubleTree Hilton
+                                                    [room_name] => Guest Room
+                                                    [room_code] => dtguestroom
+                                                )
+
+                                            [2] => Array
+                                                (
+                                                    [hotel_name] => Trident 
+                                                    [room_name] => Deluxe Garden View
+                                                    [room_code] => contract-deluxe-gv
+                                                )
+
+                                        )
+
+                                )
+
+                            [1] => Array
+                                (
+                                    [city_id] => 26
+                                    [city_name] => Jaipur
+                                    [day_count] => 2
+                                    [start_day] => 2
+                                    [end_day] => 2
+                                    [hotel_list] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [hotel_name] => Hyatt Regency
+                                                    [room_name] => Guest Room
+                                                    [room_code] => guestroom
+                                                )
+
+                                            [1] => Array
+                                                (
+                                                    [hotel_name] => Hilton
+                                                    [room_name] => Guest Room
+                                                    [room_code] => hiltonguestroom
+                                                )
+
+                                        )
+
+                                )
+
+                            [2] => Array
+                                (
+                                    [city_id] => 9
+                                    [city_name] => Delhi
+                                    [day_count] => 3
+                                    [start_day] => 3
+                                    [end_day] => 3
+                                    [hotel_list] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [hotel_name] => Sheraton Saket
+                                                    [room_name] => Deluxe Room
+                                                    [room_code] => deluxeroom
+                                                )
+
+                                            [1] => Array
+                                                (
+                                                    [hotel_name] => The Connaught
+                                                    [room_name] => Superior Room
+                                                    [room_code] => superiorroom
+                                                )
+
+                                            [2] => Array
+                                                (
+                                                    [hotel_name] => Taj Ambassador
+                                                    [room_name] => Superior Room
+                                                    [room_code] => superiorroom
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [id] => 9
+    [name] => test tour city view 3 days
+    [duration] => 3
+    [price] => 0
+    [no_of_person] => 2
+    [view_type] => city_view
+    [token] => be54110bef8ed386
+    [final_price] => 119038
+    [final_prices_by_hotel_type] => Array
+        (
+        )
+
+)
+
