@@ -446,10 +446,47 @@ $noOfPerson = !empty($tourData['no_of_person']) ? (int)$tourData['no_of_person']
   <div class="price-wrap" style="page-break-inside: avoid;">
     <div class="price-title">TOUR PRICE</div>
     <table class="price-table">
-      <thead><tr><th>Package</th><th>Price Per Person</th><th>Total Package Price</th></tr></thead>
+      <thead><tr><th>Hotel Type</th><th>Total Package Price</th></tr></thead>
       <tbody>
-        <tr><td><b>4-Star</b></td><td>$ 2,095</td><td>$ 2,095 &times; 2 Guests = <span class="total">$ 4,190</span></td></tr>
-        <tr><td><b>5-Star</b></td><td>$ 2,585</td><td>$ 2,585 &times; 2 Guests = <span class="total">$ 5,170</span></td></tr>
+        <?php if (($tourData['final_price'] ?? null) !== null): ?>
+        <?php
+          $priceFormatter = new NumberFormatter('en_IN', NumberFormatter::CURRENCY);
+          $priceFormatter->setAttribute(NumberFormatter::FRACTION_DIGITS, 0);
+          $pricesByHotelType = $tourData['final_prices_by_hotel_type'] ?? [];
+          $priceRows = [];
+          foreach ($tourData['hotel_group_list'] ?? [] as $hotelGroupList) {
+              $hotelTypeId = (int)$hotelGroupList['hotel_type_id'];
+              if (isset($priceRows[$hotelTypeId])) {
+                  continue;
+              }
+              $priceRows[$hotelTypeId] = [
+                  'name' => trim(strip_tags((string)$hotelGroupList['hotel_type_name'])),
+                  'price' => $pricesByHotelType[$hotelTypeId] ?? null,
+              ];
+          }
+        ?>
+        <?php if (!empty($priceRows)): ?>
+          <?php foreach ($priceRows as $priceRow): ?>
+          <tr>
+            <td><b><?php echo h($priceRow['name']); ?></b></td>
+            <td>
+              <?php if ($priceRow['price'] !== null): ?>
+                <span class="total"><?php echo $priceFormatter->formatCurrency($priceRow['price'], 'INR'); ?></span>
+              <?php else: ?>
+                Price on request
+              <?php endif; ?>
+            </td>
+          </tr>
+          <?php endforeach; ?>
+        <?php else: ?>
+        <tr>
+          <td><b>Final Price</b></td>
+          <td><span class="total"><?php echo $priceFormatter->formatCurrency($tourData['final_price'], 'INR'); ?></span></td>
+        </tr>
+        <?php endif; ?>
+        <?php else: ?>
+        <tr><td colspan="2">Final price is not available.</td></tr>
+        <?php endif; ?>
       </tbody>
     </table>
   </div>

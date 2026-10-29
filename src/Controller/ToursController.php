@@ -74,7 +74,9 @@ class ToursController extends AppController
 			 $tourDayViewData['no_of_person'] = $clientComTourInfo['no_of_person'];
 			 $tourDayViewData['view_type'] = $clientComTourInfo['view_type'];
            	 $tourDayViewData['token'] = $data['token'];
-			 
+			 $tourDayViewData['final_price'] = $this->getFinalTourPrice((int)$clientComTourInfo['id']);
+			 $tourDayViewData['final_prices_by_hotel_type'] = $this->getFinalTourPricesByHotelType((int)$clientComTourInfo['id']);
+
 			 return $tourDayViewData;
 		 }
 		 else if($clientComTourInfo['view_type']=='city_view')
@@ -90,10 +92,60 @@ class ToursController extends AppController
 			 $tourDayViewData['no_of_person'] = $clientComTourInfo['no_of_person'];
 			 $tourDayViewData['view_type'] = $clientComTourInfo['view_type'];
            	 $tourDayViewData['token'] = $data['token'];
-			
+			 $tourDayViewData['final_price'] = $this->getFinalTourPrice((int)$clientComTourInfo['id']);
+			 $tourDayViewData['final_prices_by_hotel_type'] = $this->getFinalTourPricesByHotelType((int)$clientComTourInfo['id']);
+
 			 return $tourDayViewData;
 		 }
-		 
+
+	}
+
+	private function getFinalTourPrice(int $tourId): ?float
+	{
+		$connection = $this->fetchTable('ClientCommunicationTours')->getConnection();
+		$price = $connection->execute(
+			'SELECT price
+			FROM client_communication_tour_prices
+			WHERE client_communication_tour_id = :tourId
+				AND status = :status
+			ORDER BY id DESC
+			LIMIT 1',
+			[
+				'tourId' => $tourId,
+				'status' => 'final_price',
+			]
+		)->fetch('assoc');
+
+		return isset($price['price']) ? (float)$price['price'] : null;
+	}
+
+	private function getFinalTourPricesByHotelType(int $tourId): array
+	{
+		$connection = $this->fetchTable('ClientCommunicationTours')->getConnection();
+		$rows = $connection->execute(
+			'SELECT detail.hotel_type_id, price.price
+			FROM client_communication_tour_prices AS price
+			INNER JOIN client_communication_tour_price_detail AS detail
+				ON detail.client_communication_tour_price_id = price.id
+			WHERE price.client_communication_tour_id = :tourId
+				AND price.status = :status
+			ORDER BY price.id DESC',
+			[
+				'tourId' => $tourId,
+				'status' => 'final_price',
+			]
+		)->fetchAll('assoc');
+
+		// Latest saved final price wins for each hotel type
+		$prices = [];
+		foreach ($rows as $row) {
+			$hotelTypeId = (int)$row['hotel_type_id'];
+			if (!isset($prices[$hotelTypeId])) {
+				$prices[$hotelTypeId] = (float)$row['price'];
+			}
+		}
+
+		return $prices;
 	}
 	
 	function getCityDayList($data=array())
@@ -221,14 +273,22 @@ class ToursController extends AppController
 			
 			foreach($tourDayPlans as $tourDayPlan)
 			{
-				$tourDayPlanDesc = $tabClientCommunicationTourDayPlanDesc->findByClientCommunicationTourDayPlanIdAndViewType($tourDayPlan['id'],'city_view')->toArray();
-				$tourDayPlanDesc = $tourDayPlanDesc[0];
-				
+				$tourDayPlanDesc = $tabClientCommunicationTourDayPlanDesc->findByClientCommunicationTourDayPlanIdAndViewType($tourDayPlan['id'],'city_view')->first();
+				$description = $tourDayPlanDesc['description'] ?? '';
+				if ($description === '') {
+					$description = $this->getOtherCostEventDescription(
+						$data['client_communication_tour_id'],
+						$tourDayPlan['event_id'],
+						$tourDayPlan['day_count'],
+						$tourDayPlan['city_id']
+					);
+				}
+
 				$tourDayPlanList[] = array(
 												"id"				=>			$tourDayPlan['id'],
 												"name"				=>			$tourDayPlan['name'],
 												"event_id"			=>			$tourDayPlan['event_id'],
-												"description"		=>			$tourDayPlanDesc['description']
+												"description"		=>			$description
 									);
 			}
 			
@@ -308,11 +368,42 @@ class ToursController extends AppController
 					);
 					
 		return $tourInfo;
-		
-		
+
+
 	}
-	
-	
+
+	private function getOtherCostEventDescription(int $tourId, int $eventId, int $dayCount, int $cityId): string
+	{
+		$connection = $this->fetchTable('ClientCommunicationTourDayPlans')->getConnection();
+		$description = $connection->execute(
+			'SELECT event_description.description
+			FROM client_communication_tour_other_costs AS other_cost
+			INNER JOIN client_communication_tour_other_cost_events AS other_event
+				ON other_event.other_cost_id = other_cost.id
+			INNER JOIN client_communication_tour_other_cost_event_descriptions AS event_description
+				ON event_description.other_cost_event_id = other_event.id
+			WHERE other_cost.client_communication_tour_id = :tourId
+				AND other_cost.tour_event_id = :eventId
+				AND other_cost.day_count = :dayCount
+				AND other_cost.city_id = :cityId
+				AND other_cost.cost_category = :costCategory
+				AND other_event.client_communication_tour_id = :tourId
+				AND other_event.city_id = :cityId
+			ORDER BY event_description.id ASC
+			LIMIT 1',
+			[
+				'tourId' => $tourId,
+				'eventId' => $eventId,
+				'dayCount' => $dayCount,
+				'cityId' => $cityId,
+				'costCategory' => 'event',
+			]
+		)->fetch('assoc');
+
+		return $description['description'] ?? '';
+	}
+
+
 	private function getTourDayView($data=array())
 	{
 		
@@ -418,14 +509,22 @@ class ToursController extends AppController
 				
 				foreach($tourDayPlans as $tourDayPlan)
 				{
-					$tourDayPlanDescInfo = $tabClientCommunicationTourDayPlanDesc->findByClientCommunicationTourDayPlanIdAndViewType($tourDayPlan['id'],'day_view')->toArray();
-					$tourDayPlanDescInfo = @$tourDayPlanDescInfo[0];
-					
+					$tourDayPlanDescInfo = $tabClientCommunicationTourDayPlanDesc->findByClientCommunicationTourDayPlanIdAndViewType($tourDayPlan['id'],'day_view')->first();
+					$description = $tourDayPlanDescInfo['description'] ?? '';
+					if ($description === '') {
+						$description = $this->getOtherCostEventDescription(
+							$data['client_communication_tour_id'],
+							$tourDayPlan['event_id'],
+							$tourDayPlan['day_count'],
+							$tourDayPlan['city_id']
+						);
+					}
+
 					$tourDayPlanList[] = array(
 													"id"						=>				$tourDayPlan['id'],
 													"name"						=>				$tourDayPlan['name'],
 													"city_id"					=>				$tourDayPlan['city_id'],
-													"description"				=>				@$tourDayPlanDescInfo['description']
+													"description"				=>				$description
 										);
 										
 					//ADDING EVENT inclusions
@@ -595,12 +694,105 @@ class ToursController extends AppController
 			
 			$hotelGroupList[] = array(
 											"hotel_type_id"		=>		$hotelType['hotel_type_id'],
-											"hotel_type_name"	=>		$hotelType['hotel_type_name'],
+											"hotel_type_name"	=>		trim(strip_tags((string)$hotelType['hotel_type_name'])),
 											"hotel_city_list"	=>		$hotelCityList
 								);
-			
+
 		}
-		
+
+		$connection = $tabClientComHotelGroups->getConnection();
+		$otherHotels = $connection->execute(
+			'SELECT
+				other_cost.day_count,
+				other_cost.city_id,
+				other_hotel.hotel_type_id,
+				other_hotel.hotel_name,
+				other_hotel.room_name,
+				hotel_type.hotel_alias AS hotel_type_name
+			FROM client_communication_tour_other_costs AS other_cost
+			INNER JOIN client_communication_tour_other_cost_hotels AS other_hotel
+				ON other_hotel.other_cost_id = other_cost.id
+			LEFT JOIN tbls_hotel_type AS hotel_type
+				ON hotel_type.id = other_hotel.hotel_type_id
+			WHERE other_cost.client_communication_tour_id = :tourId
+				AND other_cost.cost_category = :costCategory
+				AND other_hotel.client_communication_tour_id = :tourId
+			ORDER BY other_cost.day_count, other_hotel.id',
+			[
+				'tourId' => $data['client_communication_tour_id'],
+				'costCategory' => 'hotel',
+			]
+		)->fetchAll('assoc');
+
+		foreach ($otherHotels as $otherHotel) {
+			$hotelGroupIndex = null;
+			foreach ($hotelGroupList as $index => $hotelGroup) {
+				if ((int)$hotelGroup['hotel_type_id'] === (int)$otherHotel['hotel_type_id']) {
+					$hotelGroupIndex = $index;
+					break;
+				}
+			}
+
+			if ($hotelGroupIndex === null) {
+				$hotelCityList = [];
+				if (!empty($hotelGroupList)) {
+					foreach ($hotelGroupList[0]['hotel_city_list'] as $cityData) {
+						$cityData['hotel_list'] = [];
+						$hotelCityList[] = $cityData;
+					}
+				}
+
+				$hotelGroupList[] = [
+					'hotel_type_id' => $otherHotel['hotel_type_id'],
+					'hotel_type_name' => trim(strip_tags((string)$otherHotel['hotel_type_name'])),
+					'hotel_city_list' => $hotelCityList,
+				];
+				$hotelGroupIndex = count($hotelGroupList) - 1;
+			}
+
+			$cityIndex = null;
+			foreach ($hotelGroupList[$hotelGroupIndex]['hotel_city_list'] as $index => $cityData) {
+				if (
+					(int)$cityData['city_id'] === (int)$otherHotel['city_id']
+					&& (int)$otherHotel['day_count'] >= (int)$cityData['start_day']
+					&& (int)$otherHotel['day_count'] <= (int)$cityData['end_day']
+				) {
+					$cityIndex = $index;
+					break;
+				}
+			}
+
+			if ($cityIndex === null) {
+				$cityInfo = $tabTblsCity->findById($otherHotel['city_id'])->first();
+				if ($cityInfo === null) {
+					continue;
+				}
+
+				$hotelGroupList[$hotelGroupIndex]['hotel_city_list'][] = [
+					'city_id' => $cityInfo['id'],
+					'city_name' => $cityInfo['city_name'],
+					'day_count' => $otherHotel['day_count'],
+					'start_day' => $otherHotel['day_count'],
+					'end_day' => $otherHotel['day_count'],
+					'hotel_list' => [],
+				];
+				$cityIndex = count($hotelGroupList[$hotelGroupIndex]['hotel_city_list']) - 1;
+			}
+
+			$hotelGroupList[$hotelGroupIndex]['hotel_city_list'][$cityIndex]['hotel_list'][] = [
+				'hotel_name' => $otherHotel['hotel_name'],
+				'room_name' => $otherHotel['room_name'],
+				'room_code' => '',
+			];
+		}
+
+		foreach ($hotelGroupList as &$hotelGroup) {
+			usort($hotelGroup['hotel_city_list'], static function (array $firstCity, array $secondCity): int {
+				return (int)$firstCity['start_day'] <=> (int)$secondCity['start_day'];
+			});
+		}
+		unset($hotelGroup);
+
 		return $hotelGroupList;
 		
 	}
