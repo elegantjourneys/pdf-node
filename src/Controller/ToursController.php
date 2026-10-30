@@ -362,6 +362,7 @@ class ToursController extends AppController
 								"cities"   			=>		$tourCityViewList,
 								"inclusion"			=>		$inclusionList,
 								"exclusion"			=>		$exclusionList,
+								"event_inclusion"	=>		[],
 								"city_day_list"		=>		$cityDayList,
 								"hotel_group_list"	=>		$hotelGroupList
 					);
@@ -526,19 +527,25 @@ class ToursController extends AppController
 													"description"				=>				$description
 										);
 										
-					//ADDING EVENT inclusions
-					$eventIncExcs = $tabEventIncExc->findByEventId($tourDayPlan['event_id'])->toArray();
-					
-					if(!empty($eventIncExcs))
-					{
-						foreach($eventIncExcs as $eventIncExc)
+					//ADDING EVENT inclusions (keyed by inclusion_exclusion_id to avoid duplicates across days/events)
+					if (!empty($tourDayPlan['event_id'])) {
+						$eventIncExcs = $tabEventIncExc->findByEventId($tourDayPlan['event_id'])->toArray();
+						
+						if(!empty($eventIncExcs))
 						{
-							$incExcInfo = $tabInclusionExclusion->findById($eventIncExc['inclusion_exclusion_id'])->toArray();
-							
-							$eventIncList[] = array(
-														"id"			=>	$incExcInfo[0]['id'],
-														"description"	=>	$incExcInfo[0]['incexcdesc']
-												);
+							foreach($eventIncExcs as $eventIncExc)
+							{
+								$incExcId = $eventIncExc['inclusion_exclusion_id'];
+								if (!empty($incExcId) && !isset($eventIncList[$incExcId])) {
+									$incExcInfo = $tabInclusionExclusion->findById($incExcId)->toArray();
+									if (!empty($incExcInfo) && !empty($incExcInfo[0]['incexcdesc'])) {
+										$eventIncList[$incExcId] = array(
+											"id"			=>	$incExcInfo[0]['id'],
+											"description"	=>	$incExcInfo[0]['incexcdesc']
+										);
+									}
+								}
+							}
 						}
 					}								
 				}
@@ -591,11 +598,27 @@ class ToursController extends AppController
 		$hotelGroupList = $this->getHotelGroupList($requestHotelGroupList);
 		
 		
+		// Deduplicate event inclusions against tour inclusions and ensure unique descriptions
+		$existingTourIncs = [];
+		foreach ($inclusionList as $inc) {
+			$existingTourIncs[strtolower(trim($inc['description'] ?? ''))] = true;
+		}
+
+		$uniqueEventIncList = [];
+		$seenEventDescriptions = [];
+		foreach ($eventIncList as $item) {
+			$normDesc = strtolower(trim($item['description'] ?? ''));
+			if ($normDesc !== '' && !isset($existingTourIncs[$normDesc]) && !isset($seenEventDescriptions[$normDesc])) {
+				$seenEventDescriptions[$normDesc] = true;
+				$uniqueEventIncList[] = $item;
+			}
+		}
+
 		$tourInfo = array(
 								"cities"   			=>		$tourCityList,
 								"inclusion"			=>		$inclusionList,
 								"exclusion"			=>		$exclusionList,
-								"event_inclusion"	=>		$eventIncList,
+								"event_inclusion"	=>		$uniqueEventIncList,
 								"city_day_list"		=>		$cityDayList,
 								"hotel_group_list"	=>		$hotelGroupList
 					);

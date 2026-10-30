@@ -771,15 +771,19 @@ $noOfPerson = !empty($tourData['no_of_person']) ? (int)$tourData['no_of_person']
 
   
   <div class="columns">
-    <?php if (!empty($tourData['inclusion'])): ?>
+    <?php if (!empty($tourData['inclusion']) || !empty($tourData['event_inclusion'])): ?>
     <div class="info-card">
       <h3>Inclusions</h3>
-      <?php foreach ($tourData['event_inclusion'] as $eventInclusion): ?>
-        <div class="check"><?= $eventInclusion['description'] ?></div>
-      <?php endforeach; ?>
-      <?php foreach ($tourData['inclusion'] as $inclusion): ?>
-        <div class="check"><?= $inclusion['description'] ?></div>
-      <?php endforeach; ?>
+      <?php if (!empty($tourData['event_inclusion'])): ?>
+        <?php foreach ($tourData['event_inclusion'] as $eventInclusion): ?>
+          <div class="check"><?= $eventInclusion['description'] ?></div>
+        <?php endforeach; ?>
+      <?php endif; ?>
+      <?php if (!empty($tourData['inclusion'])): ?>
+        <?php foreach ($tourData['inclusion'] as $inclusion): ?>
+          <div class="check"><?= $inclusion['description'] ?></div>
+        <?php endforeach; ?>
+      <?php endif; ?>
     </div>
     <?php endif; ?>
 
