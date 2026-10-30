@@ -81,34 +81,49 @@ table{width:100%;border-collapse:collapse}
 .price-note-box{margin-top:4mm;padding:4mm 5mm;border:1px solid #eadfca;border-left:3.5px solid var(--gold);border-radius:4px;background:#faf8f3;font-size:8.2pt;line-height:1.55;color:#4e5c70}
 .price-note-box strong{color:var(--navy);letter-spacing:.5px}
 
-.section-intro{margin:1mm 0 6mm}
+.section-intro{margin:1mm 0 6mm; break-after:avoid; page-break-after:avoid;}
+.section-intro h2{break-after:avoid; page-break-after:avoid;}
 .section-intro p{color:var(--muted);font-size:9pt}
 
 .day{
-  border:1px solid var(--paper);border-radius:5px;overflow:hidden;margin-bottom:2mm;
-  background:#fff;break-inside:avoid
+  border:1px solid var(--paper);border-radius:5px;margin-bottom:2mm;
+  background:#fff;break-inside:auto;
+}
+.day,
+body.city-view .day,
+.city-view .day,
+.city-day,
+.day.city-day{
+  break-inside:auto !important;
+  page-break-inside:auto !important;
+  overflow:visible !important;
 }
 .day-head{
   background:#ffffff;border-bottom:1.5px solid var(--gold);color:var(--navy);
-  display:flex;align-items:center;justify-content:space-between;padding:2.5mm 5mm
+  display:flex;align-items:center;justify-content:space-between;padding:2.5mm 5mm;
+  break-after:avoid; page-break-after:avoid;
 }
 .day-number{font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:11pt;font-weight:800;color:var(--navy2);letter-spacing:0.5px;}
 .day-date{font-size:10pt;opacity:1;font-weight:500;}
 .day-body{padding:5mm}
-.destination{font-size:10pt;color:var(--gold);font-weight:800;text-transform:uppercase;letter-spacing:.7px;margin-bottom:4mm}
+.destination{font-size:10pt;color:var(--gold);font-weight:800;text-transform:uppercase;letter-spacing:.7px;margin-bottom:4mm; break-after:avoid; page-break-after:avoid;}
 .destination b{color:var(--navy)}
 .service{
   background:#f7f9fc;border-left:3px solid var(--gold);padding:3mm 4mm;margin:4mm 0;
-  break-inside:avoid
+  break-inside:avoid; page-break-inside:avoid;
 }
 .service strong{font-size:10pt;color:var(--navy)}
 .service ul{margin:2mm 0 0 4mm;padding-left:4mm}
 .experience{
-  padding:3mm 0;border-top:1px solid var(--line);margin-top:3mm
+  padding:3mm 0;border-top:1px solid var(--line);margin-top:3mm;
+  break-inside:auto; page-break-inside:auto;
 }
-.experience h4{font-family:Georgia,serif;color:var(--navy);font-size:11pt;margin:0 0 2mm}
+.experience h4{
+  font-family:Georgia,serif;color:var(--navy);font-size:11pt;margin:0 0 2mm;
+  break-after:avoid; page-break-after:avoid;
+}
 .experience h4:before{content:"✦";color:var(--gold);margin-right:6px;font-size:11pt}
-.experience p{font-size:10pt; margin-bottom:4px}
+.experience p{font-size:10pt; margin-bottom:4px; orphans:2; widows:2;}
 .experience ul{margin:4px 0 10px 20px; padding:0}
 .experience li{font-size:10pt; margin-bottom:4px}
 
@@ -127,7 +142,8 @@ table{width:100%;border-collapse:collapse}
 .cross:before{content:"× ";color:var(--red);font-weight:900}
 
 .terms{
-  margin-top:6mm;border-radius:4px;background:#f7f3ea;border:1px solid #eadfca;padding:5mm
+  margin-top:6mm;border-radius:4px;background:#f7f3ea;border:1px solid #eadfca;padding:5mm;
+  break-inside:avoid; page-break-inside:avoid;
 }
 .terms h3{font-size:12pt;margin-bottom:3mm}
 .terms a{color:var(--navy);word-break:break-all}
@@ -345,6 +361,42 @@ table{width:100%;border-collapse:collapse}
             break-before: page !important;
         }
 
+        .section-intro {
+            break-after: avoid !important;
+            page-break-after: avoid !important;
+        }
+
+        .section-intro h2 {
+            break-after: avoid !important;
+            page-break-after: avoid !important;
+        }
+
+        .day,
+        body.city-view .day,
+        .city-view .day,
+        .city-day,
+        .day.city-day {
+            break-inside: auto !important;
+            page-break-inside: auto !important;
+            overflow: visible !important;
+        }
+
+        .day-head,
+        .destination {
+            break-after: avoid !important;
+            page-break-after: avoid !important;
+        }
+
+        .experience {
+            break-inside: auto !important;
+            page-break-inside: auto !important;
+        }
+
+        .experience h4 {
+            break-after: avoid !important;
+            page-break-after: avoid !important;
+        }
+
         .hotel-section {
             page-break-inside: avoid;
         }
@@ -368,7 +420,7 @@ table{width:100%;border-collapse:collapse}
     }
 </style>
 </head>
-<body>
+<body class="<?php echo ($tourData['view_type'] == 'city_view') ? 'city-view' : 'day-view'; ?>">
 <header class="topbar">
     <img class="logo" src="https://www.elegantjourneys.com/version2/assets/images/logo-ej.webp" />
     <div class="contacts">
@@ -531,7 +583,7 @@ $noOfPerson = !empty($tourData['no_of_person']) ? (int)$tourData['no_of_person']
                 $dayCountString = 'DAY ' . $city['start_day'] . '-' . $city['end_day'];
             }
   ?>
-  <article class="day">
+  <article class="day city-day">
     <div class="day-head">
       <div class="day-number"><?php echo $dayCountString; ?></div>
       <div class="day-date"><?php echo $tourDateStr; ?></div>
@@ -557,7 +609,7 @@ $noOfPerson = !empty($tourData['no_of_person']) ? (int)$tourData['no_of_person']
   ?>
 
     </td></tr></tbody>
-    <tfoot><tr><td style="height:45mm; padding:0; border:none;"></td></tr></tfoot>
+    <tfoot><tr><td style="height:18mm; padding:0; border:none;"></td></tr></tfoot>
   </table>
 </section>
 <?php endif; ?>
@@ -768,9 +820,9 @@ $noOfPerson = !empty($tourData['no_of_person']) ? (int)$tourData['no_of_person']
   </div>
 
     </td></tr></tbody>
-    <tfoot><tr><td style="height:45mm; padding:0; border:none;"></td></tr></tfoot>
+    <tfoot><tr><td style="height:18mm; padding:0; border:none;"></td></tr></tfoot>
   </table>
-  <div style="position: absolute; bottom: 0; left: 0; right: 0; height: 45mm; background: #ffffff; z-index: 9999;"></div>
+  <div style="position: absolute; bottom: 0; left: 0; right: 0; height: 18mm; background: #ffffff; z-index: 9999;"></div>
 </section>
 
 </body>

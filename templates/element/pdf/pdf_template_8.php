@@ -73,20 +73,29 @@ a{color:var(--navy)}
 .meta strong{display:block;font-family:var(--serif);font-weight:400;font-size:13.5pt;color:var(--navy)}
 
 /* ---------- Itinerary ---------- */
-.section-intro{margin:1mm 0 7mm}
+.section-intro{margin:1mm 0 7mm; break-after:avoid; page-break-after:avoid;}
+.section-intro h2{break-after:avoid; page-break-after:avoid;}
 .route-map{display:block;width:150mm;max-width:100%;height:auto;margin:2mm auto 9mm}
 
-.day{border-top:.4mm solid var(--gold);margin-bottom:9mm;background:transparent;break-inside:avoid}
-.day-head{display:flex;align-items:baseline;justify-content:space-between;padding-top:3mm}
+.day{border-top:.4mm solid var(--gold);margin-bottom:9mm;background:transparent;break-inside:auto}
+.day,
+body.city-view .day,
+.city-view .day,
+.city-day,
+.day.city-day{
+  break-inside:auto !important;
+  page-break-inside:auto !important;
+  overflow:visible !important;
+}
+.day-head{display:flex;align-items:baseline;justify-content:space-between;padding-top:3mm; break-after:avoid; page-break-after:avoid;}
 .day-number{font-size:7.6pt;letter-spacing:2.6px;text-transform:uppercase;color:var(--gold)}
 .day-date{font-size:8.2pt;color:var(--muted)}
 .day-body{padding:0}
-.destination{font-family:var(--serif);font-size:15pt;color:var(--navy);margin:1mm 0 4mm;line-height:1.25}
-.destination b{font-weight:400}
-.experience{padding:0;margin-top:3mm}
+.destination{font-family:var(--serif);font-size:15pt;color:var(--navy);margin:1mm 0 4mm;line-height:1.25; break-after:avoid; page-break-after:avoid;}
+.experience{padding:0;margin-top:3mm; break-inside:auto; page-break-inside:auto;}
 .experience + .experience{padding-top:3mm;border-top:.25mm solid var(--line)}
-.experience p{font-size:9.4pt;margin-bottom:3mm}
-.experience h4{font-family:var(--serif);color:var(--navy);font-size:11.5pt;font-weight:400;margin:0 0 1.5mm}
+.experience p{font-size:9.4pt;margin-bottom:3mm; orphans:2; widows:2;}
+.experience h4{font-family:var(--serif);color:var(--navy);font-size:11.5pt;font-weight:400;margin:0 0 1.5mm; break-after:avoid; page-break-after:avoid;}
 .experience ul{margin:2mm 0 3mm 5mm;padding:0}
 .experience li{font-size:9.4pt;margin-bottom:1.5mm}
 .service{border-left:.5mm solid var(--gold);padding:1mm 0 1mm 4mm;margin:3mm 0;break-inside:avoid}
@@ -94,7 +103,7 @@ a{color:var(--navy)}
 .service ul{margin:1.5mm 0 0 4mm;padding-left:3mm}
 
 /* ---------- Hotels ---------- */
-.hotel-section{width:100%;margin:10mm 0 0;break-inside:avoid;page-break-inside:avoid}
+.hotel-section{width:100%;margin:10mm 0 0;break-inside:avoid;page-break-inside:avoid;break-before:page;page-break-before:always;}
 .hotel-table{width:100%;border-collapse:collapse;table-layout:fixed}
 .hotel-table thead th{padding:0 4mm 3mm 0;text-align:left;font-weight:400;font-size:7pt;letter-spacing:2.2px;
   text-transform:uppercase;color:var(--gold);border-bottom:.4mm solid var(--gold)}
@@ -146,12 +155,19 @@ a{color:var(--navy)}
 
 @media print{
   body{background:var(--ivory)}
+  .section-intro {break-after: avoid !important; page-break-after: avoid !important;}
+  .section-intro h2 {break-after: avoid !important; page-break-after: avoid !important;}
+  body.city-view .day, .city-view .day, .city-day, .day.city-day {break-inside: auto !important; page-break-inside: auto !important; overflow: visible !important;}
+  .day-head, .destination {break-after: avoid !important; page-break-after: avoid !important;}
+  .experience {break-inside: auto !important; page-break-inside: auto !important;}
+  .experience h4 {break-after: avoid !important; page-break-after: avoid !important;}
+  .hotel-section {break-before: page !important; page-break-before: always !important;}
   .hotel-table thead{display:table-header-group}
   .hotel-table tr{page-break-inside:avoid}
 }
 </style>
 </head>
-<body>
+<body class="<?php echo ($tourData['view_type'] == 'city_view') ? 'city-view' : 'day-view'; ?>">
 <header class="topbar">
     <img class="logo" src="https://www.elegantjourneys.com/version2/assets/images/logo-ej.webp" />
     <div class="contacts">
@@ -312,7 +328,7 @@ $hasDarshan = !empty($tourData['cities']) && stripos((string)json_encode($tourDa
                 $dayCountString = 'Day ' . $city['start_day'] . '-' . $city['end_day'];
             }
   ?>
-  <article class="day">
+  <article class="day city-day">
     <div class="day-head">
       <div class="day-number"><?php echo $dayCountString; ?></div>
       <div class="day-date"><?php echo $tourDateStr; ?></div>

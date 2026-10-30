@@ -88,34 +88,49 @@ table{width:100%;border-collapse:collapse}
 .price-table .total{font-weight:800;color:#a87809}
 .note{font-size:7.8pt;color:#5f6470;font-style:italic;margin-top:3mm;text-align:center}
 
-.section-intro{margin:1mm 0 6mm}
+.section-intro{margin:1mm 0 6mm; break-after:avoid; page-break-after:avoid;}
+.section-intro h2{break-after:avoid; page-break-after:avoid;}
 .section-intro p{color:var(--muted);font-size:9pt}
 
 .day{
-  border:1px solid var(--line);border-radius:5px;overflow:hidden;margin-bottom:6mm;
-  background:#fff;break-inside:avoid
+  border:1px solid var(--line);border-radius:5px;margin-bottom:6mm;
+  background:#fff;break-inside:auto;
+}
+.day,
+body.city-view .day,
+.city-view .day,
+.city-day,
+.day.city-day{
+  break-inside:auto !important;
+  page-break-inside:auto !important;
+  overflow:visible !important;
 }
 .day-head{
   background:linear-gradient(100deg,var(--navy),#234b80);color:white;
-  display:flex;align-items:center;justify-content:space-between;padding:4mm 5mm
+  display:flex;align-items:center;justify-content:space-between;padding:4mm 5mm;
+  break-after:avoid; page-break-after:avoid;
 }
 .day-number{font-family:Georgia,serif;font-size:10pt;font-weight:700}
 .day-date{font-size:10pt;opacity:.92}
 .day-body{padding:5mm}
-.destination{font-size:10pt;color:var(--gold);font-weight:800;text-transform:uppercase;letter-spacing:.7px;margin-bottom:4mm}
+.destination{font-size:10pt;color:var(--gold);font-weight:800;text-transform:uppercase;letter-spacing:.7px;margin-bottom:4mm; break-after:avoid; page-break-after:avoid;}
 .destination b{color:var(--navy)}
 .service{
   background:#f7f9fc;border-left:3px solid var(--gold);padding:3mm 4mm;margin:4mm 0;
-  break-inside:avoid
+  break-inside:avoid; page-break-inside:avoid;
 }
 .service strong{font-size:10pt;color:var(--navy)}
 .service ul{margin:2mm 0 0 4mm;padding-left:4mm}
 .experience{
-  padding:3mm 0;border-top:1px solid var(--line);margin-top:3mm
+  padding:3mm 0;border-top:1px solid var(--line);margin-top:3mm;
+  break-inside:auto; page-break-inside:auto;
 }
-.experience h4{font-family:Georgia,serif;color:var(--navy);font-size:11pt;margin:0 0 2mm}
+.experience h4{
+  font-family:Georgia,serif;color:var(--navy);font-size:11pt;margin:0 0 2mm;
+  break-after:avoid; page-break-after:avoid;
+}
 .experience h4:before{content:"✦";color:var(--gold);margin-right:6px;font-size:11pt}
-.experience p{font-size:10pt; margin-bottom:4px}
+.experience p{font-size:10pt; margin-bottom:4px; orphans:2; widows:2;}
 .experience ul{margin:4px 0 10px 20px; padding:0}
 .experience li{font-size:10pt; margin-bottom:4px}
 
@@ -350,6 +365,42 @@ table{width:100%;border-collapse:collapse}
 
     /* PDF print settings */
     @media print {
+        .section-intro {
+            break-after: avoid !important;
+            page-break-after: avoid !important;
+        }
+
+        .section-intro h2 {
+            break-after: avoid !important;
+            page-break-after: avoid !important;
+        }
+
+        .day,
+        body.city-view .day,
+        .city-view .day,
+        .city-day,
+        .day.city-day {
+            break-inside: auto !important;
+            page-break-inside: auto !important;
+            overflow: visible !important;
+        }
+
+        .day-head,
+        .destination {
+            break-after: avoid !important;
+            page-break-after: avoid !important;
+        }
+
+        .experience {
+            break-inside: auto !important;
+            page-break-inside: auto !important;
+        }
+
+        .experience h4 {
+            break-after: avoid !important;
+            page-break-after: avoid !important;
+        }
+
         .hotel-section {
             page-break-inside: avoid;
         }
@@ -373,7 +424,7 @@ table{width:100%;border-collapse:collapse}
     }
 </style>
 </head>
-<body>
+<body class="<?php echo ($tourData['view_type'] == 'city_view') ? 'city-view' : 'day-view'; ?>">
 <header class="topbar">
     <img class="logo" src="https://www.elegantjourneys.com/version2/assets/images/logo-ej.webp" />
     <div class="contacts">
@@ -529,7 +580,7 @@ $noOfPerson = !empty($tourData['no_of_person']) ? (int)$tourData['no_of_person']
                 $dayCountString = 'DAY ' . $city['start_day'] . '-' . $city['end_day'];
             }
   ?>
-  <article class="day">
+  <article class="day city-day">
     <div class="day-head">
       <div class="day-number"><?php echo $dayCountString; ?></div>
       <div class="day-date"><?php echo $tourDateStr; ?></div>
@@ -551,13 +602,13 @@ $noOfPerson = !empty($tourData['no_of_person']) ? (int)$tourData['no_of_person']
   ?>
 
     </td></tr></tbody>
-    <tfoot><tr><td style="height:45mm; padding:0; border:none;"></td></tr></tfoot>
+    <tfoot><tr><td style="height:18mm; padding:0; border:none;"></td></tr></tfoot>
   </table>
 </section>
 <?php endif; ?>
 
 <!-- Hotels & Inclusions -->
-<section class="sheet multipage" style="page-break-before: always; break-before: page;">
+<section class="sheet multipage hotels-sheet" style="page-break-before: always; break-before: page;">
   <table style="width:100%; border-collapse: collapse;">
     <thead><tr><td style="height:25mm; padding:0; border:none;"></td></tr></thead>
     <tbody><tr><td style="padding:0; border:none;">
@@ -751,7 +802,7 @@ $noOfPerson = !empty($tourData['no_of_person']) ? (int)$tourData['no_of_person']
   </div>
 
     </td></tr></tbody>
-    <tfoot><tr><td style="height:45mm; padding:0; border:none;"></td></tr></tfoot>
+    <tfoot><tr><td style="height:18mm; padding:0; border:none;"></td></tr></tfoot>
   </table>
 </section>
 

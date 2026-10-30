@@ -1366,7 +1366,7 @@ public function savePdf(string $token = '')
         $fixedFooter = '<footer style="position: fixed; bottom: 0; padding-bottom: 5mm; left: 15mm; right: 15mm; z-index: 1000; background: white; border-top: 1px solid #b8860b; padding-top: 2mm; display: flex; align-items: center; justify-content: space-between;">' . $footerInner . '</footer>';
         
         // Add CSS to fix ugly page breaks and prevent blank pages from sheet margins
-        $pageBreakFixes = '<style>@media print { html, body { background: #ffffff !important; } .sheet { margin: 0 !important; border: none !important; } h1, h2, h3, h4, h5, h6, .title, .sub-title, .day-title { page-break-after: avoid !important; } .day, p, tr, td, th, li { page-break-inside: avoid !important; } }</style>';
+        $pageBreakFixes = '<style>@media print { html, body { background: #ffffff !important; } .sheet { margin: 0 !important; border: none !important; } h1, h2, h3, h4, h5, h6, .title, .sub-title, .day-title, .section-intro, .day-head, .destination, .experience h4 { page-break-after: avoid !important; } li { page-break-inside: avoid !important; } .day, .city-day, body.city-view .day, .experience { page-break-inside: auto !important; } .hotels-sheet { page-break-before: always !important; break-before: page !important; } }</style>';
         
         // Insert right after <body> tag
         $html = preg_replace('/<body.*?>/', '$0' . $fixedFooter . $pageBreakFixes, $html);
